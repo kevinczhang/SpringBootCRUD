@@ -1,11 +1,16 @@
 package com.websystique.springboot.model;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.Base64;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Lob;
+
+import org.springframework.core.io.Resource;
+import org.springframework.core.io.ResourceLoader;
 
 @Entity
 public class Problem {

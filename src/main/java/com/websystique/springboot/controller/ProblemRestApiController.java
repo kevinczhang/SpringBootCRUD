@@ -56,7 +56,7 @@ public class ProblemRestApiController {
 			logger.error("User with id {} not found.", id);
 			return new ResponseEntity<>(new CustomErrorType("User with id " + id + " not found"), HttpStatus.NOT_FOUND);
 		}
-		return new ResponseEntity<>(problem, HttpStatus.OK);
+		return new ResponseEntity<>(new ProblemJson(problem), HttpStatus.OK);
 	}
 
 	// -------------------Create a Problem
