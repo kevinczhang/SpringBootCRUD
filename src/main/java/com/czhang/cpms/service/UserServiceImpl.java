@@ -1,9 +1,10 @@
-package com.websystique.springboot.service;
+package com.czhang.cpms.service;
 
 import java.util.List;
 
-import com.websystique.springboot.model.User;
-import com.websystique.springboot.repositories.UserRepository;
+import com.czhang.cpms.model.User;
+import com.czhang.cpms.repositories.UserRepository;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

@@ -1,4 +1,4 @@
-package com.websystique.springboot.controller;
+package com.czhang.cpms.controller;
 
 import java.util.List;
 
@@ -16,10 +16,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.util.UriComponentsBuilder;
 
-import com.websystique.springboot.model.Problem;
-import com.websystique.springboot.model.ProblemJson;
-import com.websystique.springboot.service.ProblemService;
-import com.websystique.springboot.util.CustomErrorType;
+import com.czhang.cpms.model.Problem;
+import com.czhang.cpms.model.ProblemJson;
+import com.czhang.cpms.service.ProblemService;
+import com.czhang.cpms.util.CustomErrorType;
 
 @RestController
 @RequestMapping("/api")

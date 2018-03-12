@@ -1,10 +1,10 @@
-package com.websystique.springboot;
+package com.czhang.cpms;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Import;
 
-import com.websystique.springboot.configuration.JpaConfiguration;
+import com.czhang.cpms.configuration.JpaConfiguration;
 
 
 @Import(JpaConfiguration.class)

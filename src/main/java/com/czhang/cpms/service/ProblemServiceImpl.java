@@ -1,4 +1,4 @@
-package com.websystique.springboot.service;
+package com.czhang.cpms.service;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -13,9 +13,9 @@ import org.springframework.core.io.ResourceLoader;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.websystique.springboot.model.Problem;
-import com.websystique.springboot.model.ProblemJson;
-import com.websystique.springboot.repositories.ProblemRepository;
+import com.czhang.cpms.model.Problem;
+import com.czhang.cpms.model.ProblemJson;
+import com.czhang.cpms.repositories.ProblemRepository;
 
 @Service("problemService")
 @Transactional

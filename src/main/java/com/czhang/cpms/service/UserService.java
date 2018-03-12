@@ -1,9 +1,9 @@
-package com.websystique.springboot.service;
+package com.czhang.cpms.service;
 
-
-import com.websystique.springboot.model.User;
 
 import java.util.List;
+
+import com.czhang.cpms.model.User;
 
 public interface UserService {
 	

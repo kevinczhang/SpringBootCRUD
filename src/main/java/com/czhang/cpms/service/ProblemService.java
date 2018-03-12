@@ -1,9 +1,9 @@
-package com.websystique.springboot.service;
+package com.czhang.cpms.service;
 
 import java.util.List;
 
-import com.websystique.springboot.model.Problem;
-import com.websystique.springboot.model.ProblemJson;
+import com.czhang.cpms.model.Problem;
+import com.czhang.cpms.model.ProblemJson;
 
 public interface ProblemService {
 	Problem findById(Long id);

@@ -1,4 +1,4 @@
-package com.websystique.springboot.configuration;
+package com.czhang.cpms.configuration;
 
 import java.util.Properties;
 

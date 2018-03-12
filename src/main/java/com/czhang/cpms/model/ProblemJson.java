@@ -1,4 +1,4 @@
-package com.websystique.springboot.model;
+package com.czhang.cpms.model;
 
 import java.util.Base64;
 

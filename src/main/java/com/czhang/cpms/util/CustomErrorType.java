@@ -1,4 +1,4 @@
-package com.websystique.springboot.util;
+package com.czhang.cpms.util;
 
 
 public class CustomErrorType {
