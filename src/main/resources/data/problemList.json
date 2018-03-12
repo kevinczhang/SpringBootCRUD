@@ -4,7 +4,7 @@
         "number": 1,
         "type": 0,
         "title": "Two Sum",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "twoSum",
         "topics": [
             0,
@@ -18,7 +18,7 @@
         "number": 7,
         "type": 0,
         "title": "Reverse Integer",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "reverseInteger",
         "topics": [
             3
@@ -31,7 +31,7 @@
         "number": 9,
         "type": 0,
         "title": "Palindrome Number",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "palindromeNumber",
         "topics": [
             3
@@ -46,7 +46,7 @@
         "number": 13,
         "type": 0,
         "title": "Roman to Integer",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "romantoInteger",
         "topics": [
             3,
@@ -62,7 +62,7 @@
         "number": 14,
         "type": 0,
         "title": "Longest Common Prefix",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "longestCommonPrefix",
         "topics": [
             5
@@ -75,7 +75,7 @@
         "number": 20,
         "type": 0,
         "title": "Valid Parentheses",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "validParentheses",
         "topics": [
             5,
@@ -89,7 +89,7 @@
         "number": 21,
         "type": 0,
         "title": "Merge Two Sorted Lists",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "mergeTwoSortedLists",
         "topics": [
             2
@@ -106,7 +106,7 @@
         "number": 26,
         "type": 0,
         "title": "Remove Duplicates from Sorted Array",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "removeDuplicatesfromSortedArray",
         "topics": [
             0,
@@ -120,7 +120,7 @@
         "number": 27,
         "type": 0,
         "title": "Remove Element",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "removeElement",
         "topics": [
             0,
@@ -134,7 +134,7 @@
         "number": 28,
         "type": 0,
         "title": "Implement strStr()",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "implementstrStr",
         "topics": [
             4,
@@ -150,7 +150,7 @@
         "number": 35,
         "type": 0,
         "title": "Search Insert Position",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "searchInsertPosition",
         "topics": [
             0,
@@ -164,7 +164,7 @@
         "number": 38,
         "type": 0,
         "title": "Count and Say",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "countandSay",
         "topics": [
             5
@@ -177,7 +177,7 @@
         "number": 53,
         "type": 0,
         "title": "Maximum Subarray",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "maximumSubarray",
         "topics": [
             0,
@@ -192,7 +192,7 @@
         "number": 58,
         "type": 0,
         "title": "Length of Last Word",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "lengthofLastWord",
         "topics": [
             5
@@ -205,7 +205,7 @@
         "number": 66,
         "type": 0,
         "title": "Plus One",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "plusOne",
         "topics": [
             0,
@@ -219,7 +219,7 @@
         "number": 67,
         "type": 0,
         "title": "Add Binary",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "addBinary",
         "topics": [
             3,
@@ -233,7 +233,7 @@
         "number": 69,
         "type": 0,
         "title": "Sqrt(x)",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "sqrtx",
         "topics": [
             2,
@@ -251,7 +251,7 @@
         "number": 70,
         "type": 0,
         "title": "Climbing Stairs",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "climbingStairs",
         "topics": [
             9
@@ -264,7 +264,7 @@
         "number": 83,
         "type": 0,
         "title": "Remove Duplicates from Sorted List",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "removeDuplicatesfromSortedList",
         "topics": [
             2
@@ -277,7 +277,7 @@
         "number": 88,
         "type": 0,
         "title": "Merge Sorted Array",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "mergeSortedArray",
         "topics": [
             0,
@@ -291,7 +291,7 @@
         "number": 100,
         "type": 0,
         "title": "Same Tree",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "sameTree",
         "topics": [
             12,
@@ -305,7 +305,7 @@
         "number": 101,
         "type": 0,
         "title": "Symmetric Tree",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "symmetricTree",
         "topics": [
             12,
@@ -320,7 +320,7 @@
         "number": 104,
         "type": 0,
         "title": "Maximum Depth of Binary Tree",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "maximumDepthofBinaryTree",
         "topics": [
             12,
@@ -334,7 +334,7 @@
         "number": 107,
         "type": 0,
         "title": "Binary Tree Level Order Traversal II",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "binaryTreeLevelOrderTraversalII",
         "topics": [
             12,
@@ -348,7 +348,7 @@
         "number": 108,
         "type": 0,
         "title": "Convert Sorted Array to Binary Search Tree",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "convertSortedArraytoBinarySearchTree",
         "topics": [
             12,
@@ -362,7 +362,7 @@
         "number": 110,
         "type": 0,
         "title": "Balanced Binary Tree",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "balancedBinaryTree",
         "topics": [
             2,
@@ -376,7 +376,7 @@
         "number": 111,
         "type": 0,
         "title": "Minimum Depth of Binary Tree",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "minimumDepthofBinaryTree",
         "topics": [
             2,
@@ -391,7 +391,7 @@
         "number": 112,
         "type": 0,
         "title": "Path Sum",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "pathSum",
         "topics": [
             2,
@@ -405,7 +405,7 @@
         "number": 118,
         "type": 0,
         "title": "Pascals Triangle",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "pascalsTriangle",
         "topics": [
             0
@@ -418,7 +418,7 @@
         "number": 119,
         "type": 0,
         "title": "Pascals Triangle II",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "pascalsTriangleII",
         "topics": [
             0
@@ -431,7 +431,7 @@
         "number": 121,
         "type": 0,
         "title": "Best Time to Buy and Sell Stock",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "bestTimetoBuyandSellStock",
         "topics": [
             0,
@@ -449,7 +449,7 @@
         "number": 122,
         "type": 0,
         "title": "Best Time to Buy and Sell Stock II",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "bestTimetoBuyandSellStockII",
         "topics": [
             0,
@@ -465,7 +465,7 @@
         "number": 125,
         "type": 0,
         "title": "Valid Palindrome",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "validPalindrome",
         "topics": [
             4,
@@ -483,7 +483,7 @@
         "number": 136,
         "type": 0,
         "title": "Single Number",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "singleNumber",
         "topics": [
             1,
@@ -501,7 +501,7 @@
         "number": 141,
         "type": 0,
         "title": "Linked List Cycle",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "linkedListCycle",
         "topics": [
             2,
@@ -515,7 +515,7 @@
         "number": 155,
         "type": 0,
         "title": "Min Stack",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "minStack",
         "topics": [
             10,
@@ -529,7 +529,7 @@
         "number": 157,
         "type": 0,
         "title": "Read N Characters Given Read4",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "readNCharactersGivenRead4",
         "topics": [
             0
@@ -544,7 +544,7 @@
         "number": 160,
         "type": 0,
         "title": "Intersection of Two Linked Lists",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "intersectionofTwoLinkedLists",
         "topics": [
             2
@@ -557,7 +557,7 @@
         "number": 167,
         "type": 0,
         "title": "Two Sum II - Input array is sorted",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "twoSumIIInputarrayissorted",
         "topics": [
             0,
@@ -572,7 +572,7 @@
         "number": 168,
         "type": 0,
         "title": "Excel Sheet Column Title",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "excelSheetColumnTitle",
         "topics": [
             3
@@ -585,7 +585,7 @@
         "number": 169,
         "type": 0,
         "title": "Majority Element",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "majorityElement",
         "topics": [
             0,
@@ -600,7 +600,7 @@
         "number": 171,
         "type": 0,
         "title": "Excel Sheet Column Number",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "excelSheetColumnNumber",
         "topics": [
             3
@@ -613,7 +613,7 @@
         "number": 172,
         "type": 0,
         "title": "Factorial Trailing Zeroes",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "factorialTrailingZeroes",
         "topics": [
             3
@@ -626,7 +626,7 @@
         "number": 189,
         "type": 0,
         "title": "Rotate Array",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "rotateArray",
         "topics": [
             0
@@ -643,7 +643,7 @@
         "number": 190,
         "type": 0,
         "title": "Reverse Bits",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "reverseBits",
         "topics": [
             22
@@ -658,7 +658,7 @@
         "number": 191,
         "type": 0,
         "title": "Number of 1 Bits",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "numberof1Bits",
         "topics": [
             22
@@ -673,7 +673,7 @@
         "number": 198,
         "type": 0,
         "title": "House Robber",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "houseRobber",
         "topics": [
             9
@@ -688,7 +688,7 @@
         "number": 202,
         "type": 0,
         "title": "Happy Number",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "happyNumber",
         "topics": [
             1,
@@ -702,7 +702,7 @@
         "number": 203,
         "type": 0,
         "title": "Remove Linked List Elements",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "removeLinkedListElements",
         "topics": [
             2
@@ -715,7 +715,7 @@
         "number": 204,
         "type": 0,
         "title": "Count Primes",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "countPrimes",
         "topics": [
             1,
@@ -729,7 +729,7 @@
         "number": 205,
         "type": 0,
         "title": "Isomorphic Strings",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "isomorphicStrings",
         "topics": [
             1
@@ -742,7 +742,7 @@
         "number": 206,
         "type": 0,
         "title": "Reverse Linked List",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "reverseLinkedList",
         "topics": [
             2
@@ -755,7 +755,7 @@
         "number": 219,
         "type": 0,
         "title": "Contains Duplicate II",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "containsDuplicateII",
         "topics": [
             0,
@@ -769,7 +769,7 @@
         "number": 225,
         "type": 0,
         "title": "Implement Stack using Queues",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "implementStackusingQueues",
         "topics": [
             10,
@@ -783,7 +783,7 @@
         "number": 226,
         "type": 0,
         "title": "Invert Binary Tree",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "invertBinaryTree",
         "topics": [
             12
@@ -796,7 +796,7 @@
         "number": 231,
         "type": 0,
         "title": "Power of Two",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "powerofTwo",
         "topics": [
             3,
@@ -810,7 +810,7 @@
         "number": 232,
         "type": 0,
         "title": "Implement Queue using Stacks",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "implementQueueusingStacks",
         "topics": [
             10,
@@ -824,7 +824,7 @@
         "number": 234,
         "type": 0,
         "title": "Palindrome Linked List",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "palindromeLinkedList",
         "topics": [
             2,
@@ -838,7 +838,7 @@
         "number": 235,
         "type": 0,
         "title": "Lowest Common Ancestor of a Binary Search Tree",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "lowestCommonAncestorofaBinarySearchTree",
         "topics": [
             12
@@ -853,7 +853,7 @@
         "number": 237,
         "type": 0,
         "title": "Delete Node in a Linked List",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "deleteNodeinaLinkedList",
         "topics": [
             2
@@ -866,7 +866,7 @@
         "number": 242,
         "type": 0,
         "title": "Valid Anagram",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "validAnagram",
         "topics": [
             1,
@@ -880,7 +880,7 @@
         "number": 246,
         "type": 0,
         "title": "Strobogrammatic Number",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "strobogrammaticNumber",
         "topics": [
             1
@@ -895,7 +895,7 @@
         "number": 252,
         "type": 0,
         "title": "Meeting Rooms",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "meetingRooms",
         "topics": [
             13
@@ -908,7 +908,7 @@
         "number": 257,
         "type": 0,
         "title": "Binary Tree Paths",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "binaryTreePaths",
         "topics": [
             12,
@@ -922,7 +922,7 @@
         "number": 258,
         "type": 0,
         "title": "Add Digits",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "addDigits",
         "topics": [
             3
@@ -937,7 +937,7 @@
         "number": 263,
         "type": 0,
         "title": "Ugly Number",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "uglyNumber",
         "topics": [
             3
@@ -950,7 +950,7 @@
         "number": 268,
         "type": 0,
         "title": "Missing Number",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "missingNumber",
         "topics": [
             0,
@@ -965,7 +965,7 @@
         "number": 278,
         "type": 0,
         "title": "First Bad Version",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "firstBadVersion",
         "topics": [
             6
@@ -978,7 +978,7 @@
         "number": 283,
         "type": 0,
         "title": "Move Zeroes",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "moveZeroes",
         "topics": [
             0,
@@ -996,7 +996,7 @@
         "number": 290,
         "type": 0,
         "title": "Word Pattern",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "wordPattern",
         "topics": [
             1
@@ -1009,7 +1009,7 @@
         "number": 292,
         "type": 0,
         "title": "Nim Game",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "nimGame",
         "topics": [
             3
@@ -1022,7 +1022,7 @@
         "number": 303,
         "type": 0,
         "title": "Range Sum Query - Immutable",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "rangeSumQueryImmutable",
         "topics": [
             9
@@ -1035,7 +1035,7 @@
         "number": 326,
         "type": 0,
         "title": "Power of Three",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "powerofThree",
         "topics": [
             3
@@ -1048,7 +1048,7 @@
         "number": 342,
         "type": 0,
         "title": "Power of Four",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "powerofFour",
         "topics": [
             22
@@ -1061,7 +1061,7 @@
         "number": 344,
         "type": 0,
         "title": "Reverse String",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "reverseString",
         "topics": [
             4,
@@ -1075,7 +1075,7 @@
         "number": 345,
         "type": 0,
         "title": "Reverse Vowels of a String",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "reverseVowelsofaString",
         "topics": [
             4,
@@ -1089,7 +1089,7 @@
         "number": 345,
         "type": 0,
         "title": "Reverse Vowels of a String",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "reverseVowelsofaString",
         "topics": [
             4,
@@ -1103,7 +1103,7 @@
         "number": 349,
         "type": 0,
         "title": "Intersection of Two Arrays",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "intersectionofTwoArrays",
         "topics": [
             1,
@@ -1119,7 +1119,7 @@
         "number": 350,
         "type": 0,
         "title": "Intersection of Two Arrays II",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "intersectionofTwoArraysII",
         "topics": [
             1,
@@ -1135,7 +1135,7 @@
         "number": 367,
         "type": 0,
         "title": "Valid Perfect Square",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "validPerfectSquare",
         "topics": [
             3,
@@ -1149,7 +1149,7 @@
         "number": 371,
         "type": 0,
         "title": "Sum of Two Integerst",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "sumofTwoIntegers",
         "topics": [
             22
@@ -1162,7 +1162,7 @@
         "number": 374,
         "type": 0,
         "title": "Guess Number Higher or Lower",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "guessNumberHigherorLower",
         "topics": [
             6
@@ -1175,7 +1175,7 @@
         "number": 383,
         "type": 0,
         "title": "Ransom Note",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "ransomNote",
         "topics": [
             5
@@ -1188,7 +1188,7 @@
         "number": 387,
         "type": 0,
         "title": "First Unique Character in a String",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "firstUniqueCharacterinaString",
         "topics": [
             5
@@ -1201,7 +1201,7 @@
         "number": 389,
         "type": 0,
         "title": "Find the Difference",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "findtheDifference",
         "topics": [
             1,
@@ -1215,7 +1215,7 @@
         "number": 400,
         "type": 0,
         "title": "Nth Digit",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "nthDigit",
         "topics": [
             3
@@ -1228,7 +1228,7 @@
         "number": 401,
         "type": 0,
         "title": "Binary Watch",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "binaryWatch",
         "topics": [
             8,
@@ -1242,7 +1242,7 @@
         "number": 404,
         "type": 0,
         "title": "Sum of Left Leaves",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "sumofLeftLeaves",
         "topics": [
             12
@@ -1255,7 +1255,7 @@
         "number": 405,
         "type": 0,
         "title": "Convert a Number to Hexadecimal",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "convertaNumbertoHexadecimal",
         "topics": [
             22
@@ -1268,7 +1268,7 @@
         "number": 409,
         "type": 0,
         "title": "Longest Palindrome",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "longestPalindrome",
         "topics": [
             1
@@ -1281,7 +1281,7 @@
         "number": 412,
         "type": 0,
         "title": "Fizz Buzz",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "fizzBuzz",
         "topics": [
             3
@@ -1294,7 +1294,7 @@
         "number": 414,
         "type": 0,
         "title": "Third Maximum Number",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "thirdMaximumNumber",
         "topics": [
             0
@@ -1307,7 +1307,7 @@
         "number": 415,
         "type": 0,
         "title": "Add Strings",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "addStrings",
         "topics": [
             3
@@ -1320,7 +1320,7 @@
         "number": 434,
         "type": 0,
         "title": "Number of Segments in a String",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "numberofSegmentsinaString",
         "topics": [
             5
@@ -1333,7 +1333,7 @@
         "number": 437,
         "type": 0,
         "title": "Path Sum III",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "pathSumIII",
         "topics": [
             12
@@ -1346,7 +1346,7 @@
         "number": 438,
         "type": 0,
         "title": "Find All Anagrams in a String",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "findAllAnagramsinaString",
         "topics": [
             1
@@ -1359,7 +1359,7 @@
         "number": 441,
         "type": 0,
         "title": "Arranging Coins",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "arrangingCoins",
         "topics": [
             4,
@@ -1373,7 +1373,7 @@
         "number": 447,
         "type": 0,
         "title": "Number of Boomerangs",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "numberofBoomerangs",
         "topics": [
             1
@@ -1386,7 +1386,7 @@
         "number": 448,
         "type": 0,
         "title": "Find All Numbers Disappeared in an Array",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "findAllNumbersDisappearedinanArray",
         "topics": [
             0
@@ -1399,7 +1399,7 @@
         "number": 453,
         "type": 0,
         "title": "Minimum Moves to Equal Array Elements",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "minimumMovestoEqualArrayElements",
         "topics": [
             3
@@ -1412,7 +1412,7 @@
         "number": 455,
         "type": 0,
         "title": "Assign Cookies",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "assignCookies",
         "topics": [
             17
@@ -1425,7 +1425,7 @@
         "number": 459,
         "type": 0,
         "title": "Repeated Substring Pattern",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "repeatedSubstringPattern",
         "topics": [
             5
@@ -1438,7 +1438,7 @@
         "number": 461,
         "type": 0,
         "title": "Hamming Distance",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "hammingDistance",
         "topics": [
             22
@@ -1451,7 +1451,7 @@
         "number": 463,
         "type": 0,
         "title": "Island Perimeter",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "islandPerimeter",
         "topics": [
             1
@@ -1464,7 +1464,7 @@
         "number": 475,
         "type": 0,
         "title": "Heaters",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "heaters",
         "topics": [
             6
@@ -1477,7 +1477,7 @@
         "number": 476,
         "type": 0,
         "title": "Number Complement",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "numberComplement",
         "topics": [
             22
@@ -1490,7 +1490,7 @@
         "number": 479,
         "type": 0,
         "title": "Largest Palindrome Product",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "largestPalindromeProduct",
         "topics": [
             3
@@ -1503,7 +1503,7 @@
         "number": 485,
         "type": 0,
         "title": "Max Consecutive Ones",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "maxConsecutiveOnes",
         "topics": [
             0
@@ -1518,7 +1518,7 @@
         "number": 500,
         "type": 0,
         "title": "Keyboard Row",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "keyboardRow",
         "topics": [
             1
@@ -1533,7 +1533,7 @@
         "number": 543,
         "type": 0,
         "title": "Diameter of Binary Tree",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "diameterofBinaryTree",
         "topics": [
             12
@@ -1548,7 +1548,7 @@
         "number": 551,
         "type": 0,
         "title": "Student Attendance Record I",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "studentAttendanceRecordI",
         "topics": [
             5
@@ -1561,7 +1561,7 @@
         "number": 557,
         "type": 0,
         "title": "Reverse Words in a String III",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "reverseWordsinaStringIII",
         "topics": [
             5
@@ -1574,7 +1574,7 @@
         "number": 575,
         "type": 0,
         "title": "Distribute Candies",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "distributeCandies",
         "topics": [
             1
@@ -1587,7 +1587,7 @@
         "number": 581,
         "type": 0,
         "title": "Shortest Unsorted Continuous Subarray",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "shortestUnsortedContinuousSubarray",
         "topics": [
             0
@@ -1600,7 +1600,7 @@
         "number": 594,
         "type": 0,
         "title": "Longest Harmonious Subsequence",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "longestHarmoniousSubsequence",
         "topics": [
             1
@@ -1613,7 +1613,7 @@
         "number": 598,
         "type": 0,
         "title": "Range Addition II",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "rangeAdditionII",
         "topics": [
             3
@@ -1626,7 +1626,7 @@
         "number": 599,
         "type": 0,
         "title": "Minimum Index Sum of Two Lists",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "minimumIndexSumofTwoLists",
         "topics": [
             1
@@ -1639,7 +1639,7 @@
         "number": 605,
         "type": 0,
         "title": "Can Place Flowers",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "canPlaceFlowers",
         "topics": [
             0
@@ -1652,7 +1652,7 @@
         "number": 606,
         "type": 0,
         "title": "Construct String from Binary Tree",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "constructStringfromBinaryTree",
         "topics": [
             5,
@@ -1666,7 +1666,7 @@
         "number": 617,
         "type": 0,
         "title": "Merge Two Binary Trees",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "mergeTwoBinaryTrees",
         "topics": [
             12
@@ -1679,7 +1679,7 @@
         "number": 624,
         "type": 0,
         "title": "Maximum Distance in Arrays",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "maximumDistanceinArrays",
         "topics": [
             0,
@@ -1693,7 +1693,7 @@
         "number": 628,
         "type": 0,
         "title": "Maximum Product of Three Numbers",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "maximumProductofThreeNumbers",
         "topics": [
             0,
@@ -1707,7 +1707,7 @@
         "number": 2,
         "type": 0,
         "title": "Add Two Numbers",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "addTwoNumbers",
         "topics": [
             2,
@@ -1721,7 +1721,7 @@
         "number": 3,
         "type": 0,
         "title": "Longest Substring Without Repeating Characters",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "longestSubstringWithoutRepeatingCharacters",
         "topics": [
             1,
@@ -1736,7 +1736,7 @@
         "number": 5,
         "type": 0,
         "title": "Longest Palindromic Substring",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "longestPalindromicSubstring",
         "topics": [
             5
@@ -1749,7 +1749,7 @@
         "number": 6,
         "type": 0,
         "title": "ZigZag Conversion",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "zigZagConversion",
         "topics": [
             5
@@ -1762,7 +1762,7 @@
         "number": 8,
         "type": 0,
         "title": "String to Integer (atoi)",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "stringtoInteger",
         "topics": [
             3,
@@ -1776,7 +1776,7 @@
         "number": 11,
         "type": 0,
         "title": "Container With Most Water",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "containerWithMostWater",
         "topics": [
             0,
@@ -1790,7 +1790,7 @@
         "number": 12,
         "type": 0,
         "title": "Integer to Roman",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "integertoRoman",
         "topics": [
             3,
@@ -1806,7 +1806,7 @@
         "number": 15,
         "type": 0,
         "title": "3Sum",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "3Sum",
         "topics": [
             0,
@@ -1822,7 +1822,7 @@
         "number": 16,
         "type": 0,
         "title": "3Sum Closest",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "3SumClosest",
         "topics": [
             0,
@@ -1836,7 +1836,7 @@
         "number": 17,
         "type": 0,
         "title": "Letter Combinations of a Phone Number",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "letterCombinationsofaPhoneNumber",
         "topics": [
             5,
@@ -1854,7 +1854,7 @@
         "number": 18,
         "type": 0,
         "title": "4Sum",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "4Sum",
         "topics": [
             0,
@@ -1869,7 +1869,7 @@
         "number": 19,
         "type": 0,
         "title": "Remove Nth Node From End of List",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "removeNthNodeFromEndofList",
         "topics": [
             2,
@@ -1883,7 +1883,7 @@
         "number": 22,
         "type": 0,
         "title": "Generate Parentheses",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "generateParentheses",
         "topics": [
             5,
@@ -1897,7 +1897,7 @@
         "number": 24,
         "type": 0,
         "title": "Swap Nodes in Pairs",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "swapNodesinPairs",
         "topics": [
             2
@@ -1910,7 +1910,7 @@
         "number": 29,
         "type": 0,
         "title": "Divide Two Integers",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "divideTwoIntegers",
         "topics": [
             3,
@@ -1924,7 +1924,7 @@
         "number": 31,
         "type": 0,
         "title": "Next Permutation",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "nextPermutation",
         "topics": [
             0
@@ -1939,7 +1939,7 @@
         "number": 33,
         "type": 0,
         "title": "Search in Rotated Sorted Array",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "searchinRotatedSortedArray",
         "topics": [
             0,
@@ -1953,7 +1953,7 @@
         "number": 34,
         "type": 0,
         "title": "Search for a Range",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "searchforaRange",
         "topics": [
             0,
@@ -1969,7 +1969,7 @@
         "number": 36,
         "type": 0,
         "title": "Valid Sudoku",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "validSudoku",
         "topics": [
             1,
@@ -1983,7 +1983,7 @@
         "number": 39,
         "type": 0,
         "title": "Combination Sum",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "combinationSum",
         "topics": [
             0,
@@ -1999,7 +1999,7 @@
         "number": 40,
         "type": 0,
         "title": "Combination Sum II",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "combinationSumII",
         "topics": [
             0,
@@ -2013,7 +2013,7 @@
         "number": 43,
         "type": 0,
         "title": "Multiply Strings",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "multiplyStrings",
         "topics": [
             3,
@@ -2027,7 +2027,7 @@
         "number": 46,
         "type": 0,
         "title": "Permutations",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "permutations",
         "topics": [
             8
@@ -2040,7 +2040,7 @@
         "number": 47,
         "type": 0,
         "title": "Permutations II",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "permutationsII",
         "topics": [
             8
@@ -2055,7 +2055,7 @@
         "number": 48,
         "type": 0,
         "title": "Rotate Image",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "rotateImage",
         "topics": [
             0
@@ -2068,7 +2068,7 @@
         "number": 49,
         "type": 0,
         "title": "Group Anagrams",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "groupAnagrams",
         "topics": [
             1,
@@ -2082,7 +2082,7 @@
         "number": 50,
         "type": 0,
         "title": "Pow(x, n)",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "powxn",
         "topics": [
             3,
@@ -2096,7 +2096,7 @@
         "number": 54,
         "type": 0,
         "title": "Spiral Matrix",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "spiralMatrix",
         "topics": [
             0
@@ -2109,7 +2109,7 @@
         "number": 55,
         "type": 0,
         "title": "Jump Game",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "jumpGame",
         "topics": [
             0,
@@ -2123,7 +2123,7 @@
         "number": 56,
         "type": 0,
         "title": "Merge Intervals",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "mergeIntervals",
         "topics": [
             0,
@@ -2137,7 +2137,7 @@
         "number": 59,
         "type": 0,
         "title": "Spiral Matrix II",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "spiralMatrixII",
         "topics": [
             0
@@ -2150,7 +2150,7 @@
         "number": 60,
         "type": 0,
         "title": "Permutation Sequence",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "permutationSequence",
         "topics": [
             3,
@@ -2166,7 +2166,7 @@
         "number": 61,
         "type": 0,
         "title": "Rotate List",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "rotateList",
         "topics": [
             2,
@@ -2180,7 +2180,7 @@
         "number": 62,
         "type": 0,
         "title": "Unique Paths",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "uniquePaths",
         "topics": [
             0,
@@ -2196,7 +2196,7 @@
         "number": 63,
         "type": 0,
         "title": "Unique Paths II",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "uniquePathsII",
         "topics": [
             0,
@@ -2212,7 +2212,7 @@
         "number": 64,
         "type": 0,
         "title": "Minimum Path Sum",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "minimumPathSum",
         "topics": [
             0,
@@ -2226,7 +2226,7 @@
         "number": 71,
         "type": 0,
         "title": "Simplify Path",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "simplifyPath",
         "topics": [
             5,
@@ -2240,7 +2240,7 @@
         "number": 73,
         "type": 0,
         "title": "Set Matrix Zeroes",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "setMatrixZeroes",
         "topics": [
             0
@@ -2253,7 +2253,7 @@
         "number": 74,
         "type": 0,
         "title": "Search a 2D Matrix",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "searcha2DMatrix",
         "topics": [
             5,
@@ -2267,7 +2267,7 @@
         "number": 75,
         "type": 0,
         "title": "Sort Colors",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "sortColors",
         "topics": [
             0,
@@ -2284,7 +2284,7 @@
         "number": 77,
         "type": 0,
         "title": "Combinations",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "combinations",
         "topics": [
             8
@@ -2297,7 +2297,7 @@
         "number": 78,
         "type": 0,
         "title": "Subsets",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "subsets",
         "topics": [
             0,
@@ -2312,7 +2312,7 @@
         "number": 79,
         "type": 0,
         "title": "Word Search",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "wordSearch",
         "topics": [
             0,
@@ -2330,7 +2330,7 @@
         "number": 80,
         "type": 0,
         "title": "Remove Duplicates from Sorted Array II",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "removeDuplicatesfromSortedArrayII",
         "topics": [
             0,
@@ -2344,7 +2344,7 @@
         "number": 81,
         "type": 0,
         "title": "Search in Rotated Sorted Array II",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "searchinRotatedSortedArrayII",
         "topics": [
             0,
@@ -2358,7 +2358,7 @@
         "number": 82,
         "type": 0,
         "title": "Remove Duplicates from Sorted List II",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "removeDuplicatesfromSortedListII",
         "topics": [
             2
@@ -2371,7 +2371,7 @@
         "number": 86,
         "type": 0,
         "title": "Partition List",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "partitionList",
         "topics": [
             2,
@@ -2385,7 +2385,7 @@
         "number": 89,
         "type": 0,
         "title": "Gray Code",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "grayCode",
         "topics": [
             8
@@ -2400,7 +2400,7 @@
         "number": 90,
         "type": 0,
         "title": "Subsets II",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "subsetsII",
         "topics": [
             0,
@@ -2414,7 +2414,7 @@
         "number": 91,
         "type": 0,
         "title": "Decode Ways",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "decodeWays",
         "topics": [
             5,
@@ -2432,7 +2432,7 @@
         "number": 92,
         "type": 0,
         "title": "Reverse Linked List II",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "reverseLinkedListII",
         "topics": [
             2
@@ -2445,7 +2445,7 @@
         "number": 93,
         "type": 0,
         "title": "Restore IP Addresses",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "restoreIPAddresses",
         "topics": [
             5,
@@ -2459,7 +2459,7 @@
         "number": 94,
         "type": 0,
         "title": "Binary Tree Inorder Traversal",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "binaryTreeInorderTraversal",
         "topics": [
             1,
@@ -2474,7 +2474,7 @@
         "number": 95,
         "type": 0,
         "title": "Unique Binary Search Trees II",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "uniqueBinarySearchTreesII",
         "topics": [
             9,
@@ -2490,7 +2490,7 @@
         "number": 96,
         "type": 0,
         "title": "Unique Binary Search Trees",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "uniqueBinarySearchTrees",
         "topics": [
             9,
@@ -2504,7 +2504,7 @@
         "number": 98,
         "type": 0,
         "title": "Validate Binary Search Tree",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "validateBinarySearchTree",
         "topics": [
             12,
@@ -2522,7 +2522,7 @@
         "number": 102,
         "type": 0,
         "title": "Binary Tree Level Order Traversal",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "binaryTreeLevelOrderTraversal",
         "topics": [
             12,
@@ -2538,7 +2538,7 @@
         "number": 103,
         "type": 0,
         "title": "Binary Tree Zigzag Level Order Traversal",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "binaryTreeZigzagLevelOrderTraversal",
         "topics": [
             12,
@@ -2553,7 +2553,7 @@
         "number": 105,
         "type": 0,
         "title": "Construct Binary Tree from Preorder and Inorder Traversal",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "constructBinaryTreefromPreorderandInorderTraversal",
         "topics": [
             0,
@@ -2568,7 +2568,7 @@
         "number": 106,
         "type": 0,
         "title": "Construct Binary Tree from Inorder and Postorder Traversal",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "constructBinaryTreefromInorderandPostorderTraversal",
         "topics": [
             0,
@@ -2583,7 +2583,7 @@
         "number": 109,
         "type": 0,
         "title": "Convert Sorted List to Binary Search Tree",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "convertSortedListtoBinarySearchTree",
         "topics": [
             2,
@@ -2597,7 +2597,7 @@
         "number": 113,
         "type": 0,
         "title": "Path Sum II",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "pathSumII",
         "topics": [
             2,
@@ -2611,7 +2611,7 @@
         "number": 114,
         "type": 0,
         "title": "Flatten Binary Tree to Linked List",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "flattenBinaryTreetoLinkedList",
         "topics": [
             12,
@@ -2629,7 +2629,7 @@
         "number": 116,
         "type": 0,
         "title": "Populating Next Right Pointers in Each Node",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "populatingNextRightPointersinEachNode",
         "topics": [
             12,
@@ -2647,7 +2647,7 @@
         "number": 117,
         "type": 0,
         "title": "Populating Next Right Pointers in Each Node II",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "populatingNextRightPointersinEachNodeII",
         "topics": [
             12,
@@ -2665,7 +2665,7 @@
         "number": 120,
         "type": 0,
         "title": "Triangle",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "Triangle",
         "topics": [
             0,
@@ -2679,7 +2679,7 @@
         "number": 127,
         "type": 0,
         "title": "Word Ladder",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "wordLadder",
         "topics": [
             0,
@@ -2697,7 +2697,7 @@
         "number": 129,
         "type": 0,
         "title": "Sum Root to Leaf Numbers",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "sumRoottoLeafNumbers",
         "topics": [
             12,
@@ -2711,7 +2711,7 @@
         "number": 130,
         "type": 0,
         "title": "Surrounded Regions",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "surroundedRegions",
         "topics": [
             16,
@@ -2725,7 +2725,7 @@
         "number": 131,
         "type": 0,
         "title": "Palindrome Partitioning",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "palindromePartitioning",
         "topics": [
             8
@@ -2740,7 +2740,7 @@
         "number": 133,
         "type": 0,
         "title": "Clone Graph",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "cloneGraph",
         "topics": [
             14,
@@ -2759,7 +2759,7 @@
         "number": 134,
         "type": 0,
         "title": "Gas Station",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "gasStation",
         "topics": [
             17
@@ -2774,7 +2774,7 @@
         "number": 137,
         "type": 0,
         "title": "Single Number II",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "singleNumberII",
         "topics": [
             22
@@ -2787,7 +2787,7 @@
         "number": 138,
         "type": 0,
         "title": "Copy List with Random Pointer",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "copyListwithRandomPointer",
         "topics": [
             1,
@@ -2805,7 +2805,7 @@
         "number": 139,
         "type": 0,
         "title": "Word Break",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "wordBreak",
         "topics": [
             9
@@ -2822,7 +2822,7 @@
         "number": 142,
         "type": 0,
         "title": "Linked List Cycle II",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "linkedListCycleII",
         "topics": [
             2,
@@ -2836,7 +2836,7 @@
         "number": 143,
         "type": 0,
         "title": "Reorder List",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "reorderList",
         "topics": [
             2
@@ -2849,7 +2849,7 @@
         "number": 144,
         "type": 0,
         "title": "Binary Tree Preorder Traversal",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "binaryTreePreorderTraversal",
         "topics": [
             12,
@@ -2863,7 +2863,7 @@
         "number": 147,
         "type": 0,
         "title": "Insertion Sort List",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "insertionSortList",
         "topics": [
             2,
@@ -2877,7 +2877,7 @@
         "number": 148,
         "type": 0,
         "title": "Sort List",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "sortList",
         "topics": [
             2,
@@ -2891,7 +2891,7 @@
         "number": 150,
         "type": 0,
         "title": "Evaluate Reverse Polish Notation",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "evaluateReversePolishNotation",
         "topics": [
             15
@@ -2904,7 +2904,7 @@
         "number": 151,
         "type": 0,
         "title": "Reverse Words in a String",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "reverseWordsinaString",
         "topics": [
             5
@@ -2917,7 +2917,7 @@
         "number": 152,
         "type": 0,
         "title": "Maximum Product Subarray",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "maximumProductSubarray",
         "topics": [
             0,
@@ -2933,7 +2933,7 @@
         "number": 153,
         "type": 0,
         "title": "Find Minimum in Rotated Sorted Array",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "findMinimuminRotatedSortedArray",
         "topics": [
             0,
@@ -2947,7 +2947,7 @@
         "number": 162,
         "type": 0,
         "title": "Find Peak Element",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "findPeakElement",
         "topics": [
             0,
@@ -2961,7 +2961,7 @@
         "number": 165,
         "type": 0,
         "title": "Compare Version Numbers",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "compareVersionNumbers",
         "topics": [
             5
@@ -2974,7 +2974,7 @@
         "number": 166,
         "type": 0,
         "title": "Fraction to Recurring Decimal",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "fractiontoRecurringDecimal",
         "topics": [
             1,
@@ -2988,7 +2988,7 @@
         "number": 173,
         "type": 0,
         "title": "Binary Search Tree Iterator",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "binarySearchTreeIterator",
         "topics": [
             10,
@@ -3003,7 +3003,7 @@
         "number": 179,
         "type": 0,
         "title": "Largest Number",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "largestNumber",
         "topics": [
             13
@@ -3018,7 +3018,7 @@
         "number": 187,
         "type": 0,
         "title": "Repeated DNA Sequences",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "repeatedDNASequences",
         "topics": [
             1,
@@ -3034,7 +3034,7 @@
         "number": 199,
         "type": 0,
         "title": "Binary Tree Right Side View",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "binaryTreeRightSideView",
         "topics": [
             12,
@@ -3051,7 +3051,7 @@
         "number": 200,
         "type": 0,
         "title": "Number of Islands",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "numberofIslands",
         "topics": [
             14,
@@ -3070,7 +3070,7 @@
         "number": 201,
         "type": 0,
         "title": "Bitwise AND of Numbers Range",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "bitwiseANDofNumbersRange",
         "topics": [
             22
@@ -3083,7 +3083,7 @@
         "number": 207,
         "type": 0,
         "title": "Course Schedule",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "courseSchedule",
         "topics": [
             14,
@@ -3099,7 +3099,7 @@
         "number": 208,
         "type": 0,
         "title": "Implement Trie (Prefix Tree)",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "implementTrie",
         "topics": [
             10,
@@ -3115,7 +3115,7 @@
         "number": 209,
         "type": 0,
         "title": "Minimum Size Subarray Sum",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "minimumSizeSubarraySum",
         "topics": [
             0,
@@ -3130,7 +3130,7 @@
         "number": 210,
         "type": 0,
         "title": "Course Schedule II",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "courseScheduleII",
         "topics": [
             14,
@@ -3146,7 +3146,7 @@
         "number": 211,
         "type": 0,
         "title": "Add and Search Word - Data structure design",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "addandSearchWordDesign",
         "topics": [
             8,
@@ -3165,7 +3165,7 @@
         "number": 213,
         "type": 0,
         "title": "House Robber II",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "houseRobberII",
         "topics": [
             9
@@ -3178,7 +3178,7 @@
         "number": 215,
         "type": 0,
         "title": "Kth Largest Element in an Array",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "kthLargestElementinanArray",
         "topics": [
             7,
@@ -3192,7 +3192,7 @@
         "number": 216,
         "type": 0,
         "title": "Combination Sum III",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "combinationSumIII",
         "topics": [
             0,
@@ -3206,7 +3206,7 @@
         "number": 217,
         "type": 0,
         "title": "Contains Duplicate",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "containsDuplicate",
         "topics": [
             0,
@@ -3220,7 +3220,7 @@
         "number": 220,
         "type": 0,
         "title": "Contains Duplicate III",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "containsDuplicateIII",
         "topics": [
             28
@@ -3233,7 +3233,7 @@
         "number": 221,
         "type": 0,
         "title": "Maximal Square",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "maximalSquare",
         "topics": [
             9
@@ -3246,7 +3246,7 @@
         "number": 222,
         "type": 0,
         "title": "Count Complete Tree Nodes",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "countCompleteTreeNodes",
         "topics": [
             6,
@@ -3262,7 +3262,7 @@
         "number": 223,
         "type": 0,
         "title": "Rectangle Area",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "rectangleArea",
         "topics": [
             3
@@ -3275,7 +3275,7 @@
         "number": 227,
         "type": 0,
         "title": "Basic Calculator II",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "basicCalculatorII",
         "topics": [
             5
@@ -3288,7 +3288,7 @@
         "number": 228,
         "type": 0,
         "title": "Summary Ranges",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "summaryRanges",
         "topics": [
             0
@@ -3301,7 +3301,7 @@
         "number": 229,
         "type": 0,
         "title": "Majority Element II",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "majorityElementII",
         "topics": [
             0
@@ -3314,7 +3314,7 @@
         "number": 230,
         "type": 0,
         "title": "Kth Smallest Element in a BST",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "kthSmallestElementinaBST",
         "topics": [
             6,
@@ -3328,7 +3328,7 @@
         "number": 236,
         "type": 0,
         "title": "Lowest Common Ancestor of a Binary Tree",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "lowestCommonAncestorofaBinaryTree",
         "topics": [
             12
@@ -3343,7 +3343,7 @@
         "number": 238,
         "type": 0,
         "title": "Product of Array Except Self",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "productofArrayExceptSelf",
         "topics": [
             0
@@ -3356,7 +3356,7 @@
         "number": 240,
         "type": 0,
         "title": "Search a 2D Matrix II",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "searcha2DMatrixII",
         "topics": [
             6,
@@ -3370,7 +3370,7 @@
         "number": 241,
         "type": 0,
         "title": "Different Ways to Add Parentheses",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "differentWaystoAddParentheses",
         "topics": [
             7
@@ -3383,7 +3383,7 @@
         "number": 247,
         "type": 0,
         "title": "Strobogrammatic Number II",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "strobogrammaticNumberII",
         "topics": [
             5
@@ -3398,7 +3398,7 @@
         "number": 253,
         "type": 0,
         "title": "Meeting Rooms II",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "meetingRoomsII",
         "topics": [
             5
@@ -3415,7 +3415,7 @@
         "number": 260,
         "type": 0,
         "title": "Single Number III",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "singleNumberIII",
         "topics": [
             22
@@ -3428,7 +3428,7 @@
         "number": 264,
         "type": 0,
         "title": "Ugly Number II",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "uglyNumberII",
         "topics": [
             3
@@ -3441,7 +3441,7 @@
         "number": 274,
         "type": 0,
         "title": "H-Index",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "hIndex",
         "topics": [
             1,
@@ -3455,7 +3455,7 @@
         "number": 275,
         "type": 0,
         "title": "H-Index II",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "hIndexII",
         "topics": [
             6
@@ -3468,7 +3468,7 @@
         "number": 279,
         "type": 0,
         "title": "Perfect Squares",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "perfectSquares",
         "topics": [
             3,
@@ -3483,7 +3483,7 @@
         "number": 280,
         "type": 0,
         "title": "Wiggle Sort",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "wiggleSort",
         "topics": [
             0
@@ -3496,7 +3496,7 @@
         "number": 284,
         "type": 0,
         "title": "Peeking Iterator",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "peekingIterator",
         "topics": [
             10
@@ -3509,7 +3509,7 @@
         "number": 285,
         "type": 0,
         "title": "Inorder Successor in BST",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "inorderSuccessorinBST",
         "topics": [
             12
@@ -3524,7 +3524,7 @@
         "number": 287,
         "type": 0,
         "title": "Find the Duplicate Number",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "findtheDuplicateNumber",
         "topics": [
             0,
@@ -3539,7 +3539,7 @@
         "number": 289,
         "type": 0,
         "title": "Game of Life",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "gameofLife",
         "topics": [
             0
@@ -3552,7 +3552,7 @@
         "number": 299,
         "type": 0,
         "title": "Bulls and Cows",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "bullsandCows",
         "topics": [
             1
@@ -3565,7 +3565,7 @@
         "number": 300,
         "type": 0,
         "title": "Longest Increasing Subsequence",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "longestIncreasingSubsequence",
         "topics": [
             6,
@@ -3581,7 +3581,7 @@
         "number": 304,
         "type": 0,
         "title": "Range Sum Query 2D - Immutable",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "rangeSumQuery2DImmutable",
         "topics": [
             9
@@ -3596,7 +3596,7 @@
         "number": 306,
         "type": 0,
         "title": "Additive Number",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "additiveNumber",
         "topics": [
             3
@@ -3611,7 +3611,7 @@
         "number": 307,
         "type": 0,
         "title": "Range Sum Query - Mutable",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "rangeSumQueryMutable",
         "topics": [
             26,
@@ -3625,7 +3625,7 @@
         "number": 309,
         "type": 0,
         "title": "Best Time to Buy and Sell Stock with Cooldown",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "bestTimetoBuyandSellStockwithCooldown",
         "topics": [
             9
@@ -3638,7 +3638,7 @@
         "number": 310,
         "type": 0,
         "title": "Minimum Height Trees",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "minimumHeightTrees",
         "topics": [
             19,
@@ -3652,7 +3652,7 @@
         "number": 311,
         "type": 0,
         "title": "Sparse Matrix Multiplication",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "sparseMatrixMultiplication",
         "topics": [
             21
@@ -3667,7 +3667,7 @@
         "number": 313,
         "type": 0,
         "title": "Super Ugly Number",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "superUglyNumber",
         "topics": [
             3,
@@ -3681,7 +3681,7 @@
         "number": 318,
         "type": 0,
         "title": "Maximum Product of Word Lengths",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "maximumProductofWordLengths",
         "topics": [
             22
@@ -3694,7 +3694,7 @@
         "number": 319,
         "type": 0,
         "title": "Bulb Switcher",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "bulbSwitcher",
         "topics": [
             3
@@ -3707,7 +3707,7 @@
         "number": 322,
         "type": 0,
         "title": "Coin Change",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "coinChange",
         "topics": [
             9
@@ -3720,7 +3720,7 @@
         "number": 324,
         "type": 0,
         "title": "Wiggle Sort II",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "wiggleSortII",
         "topics": [
             13
@@ -3733,7 +3733,7 @@
         "number": 325,
         "type": 0,
         "title": "Maximum Size Subarray Sum Equals k",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "maximumSizeSubarraySumEqualsk",
         "topics": [
             1
@@ -3750,7 +3750,7 @@
         "number": 328,
         "type": 0,
         "title": "Odd Even Linked List",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "oddEvenLinkedList",
         "topics": [
             2
@@ -3763,7 +3763,7 @@
         "number": 331,
         "type": 0,
         "title": "Verify Preorder Serialization of a Binary Tree",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "verifyPreorderSerializationofaBinaryTree",
         "topics": [
             15
@@ -3776,7 +3776,7 @@
         "number": 332,
         "type": 0,
         "title": "Reconstruct Itinerary",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "reconstructItinerary",
         "topics": [
             14,
@@ -3790,7 +3790,7 @@
         "number": 334,
         "type": 0,
         "title": "Increasing Triplet Subsequence",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "increasingTripletSubsequence",
         "topics": [
             0
@@ -3803,7 +3803,7 @@
         "number": 337,
         "type": 0,
         "title": "House Robber III",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "houseRobberIII",
         "topics": [
             12,
@@ -3817,7 +3817,7 @@
         "number": 338,
         "type": 0,
         "title": "Counting Bits",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "countingBits",
         "topics": [
             9,
@@ -3831,7 +3831,7 @@
         "number": 341,
         "type": 0,
         "title": "Flatten Nested List Iterator",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "flattenNestedListIterator",
         "topics": [
             10,
@@ -3845,7 +3845,7 @@
         "number": 343,
         "type": 0,
         "title": "Integer Break",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "integerBreak",
         "topics": [
             3,
@@ -3859,7 +3859,7 @@
         "number": 347,
         "type": 0,
         "title": "Top K Frequent Elements",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "topKFrequentElements",
         "topics": [
             1,
@@ -3875,7 +3875,7 @@
         "number": 355,
         "type": 0,
         "title": "Design Twitter",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "designTwitter",
         "topics": [
             1,
@@ -3890,7 +3890,7 @@
         "number": 357,
         "type": 0,
         "title": "Count Numbers with Unique Digits",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "countNumberswithUniqueDigits",
         "topics": [
             3,
@@ -3905,7 +3905,7 @@
         "number": 365,
         "type": 0,
         "title": "Water and Jug Problem",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "waterandJugProblem",
         "topics": [
             3
@@ -3918,7 +3918,7 @@
         "number": 368,
         "type": 0,
         "title": "Largest Divisible Subset",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "largestDivisibleSubset",
         "topics": [
             3,
@@ -3932,7 +3932,7 @@
         "number": 372,
         "type": 0,
         "title": "Super Pow",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "superPow",
         "topics": [
             3
@@ -3945,7 +3945,7 @@
         "number": 373,
         "type": 0,
         "title": "Find K Pairs with Smallest Sums",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "findKPairswithSmallestSums",
         "topics": [
             20
@@ -3958,7 +3958,7 @@
         "number": 375,
         "type": 0,
         "title": "Guess Number Higher or Lower II",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "guessNumberHigherorLowerII",
         "topics": [
             9,
@@ -3972,7 +3972,7 @@
         "number": 376,
         "type": 0,
         "title": "Wiggle Subsequence",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "wiggleSubsequence",
         "topics": [
             9,
@@ -3986,7 +3986,7 @@
         "number": 377,
         "type": 0,
         "title": "Combination Sum IV",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "combinationSumIV",
         "topics": [
             9
@@ -3999,7 +3999,7 @@
         "number": 378,
         "type": 0,
         "title": "Kth Smallest Element in a Sorted Matrix",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "kthSmallestElementinaSortedMatrix",
         "topics": [
             6,
@@ -4013,7 +4013,7 @@
         "number": 380,
         "type": 0,
         "title": "Insert Delete GetRandom O(1)",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "insertDeleteGetRandomO1",
         "topics": [
             0,
@@ -4028,7 +4028,7 @@
         "number": 381,
         "type": 0,
         "title": "Insert Delete GetRandom O(1) - Duplicates allowed",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "insertDeleteGetRandomO1Duplicatesallowed",
         "topics": [
             0,
@@ -4043,7 +4043,7 @@
         "number": 382,
         "type": 0,
         "title": "Linked List Random Node",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "linkedListRandomNode",
         "topics": [
             33
@@ -4056,7 +4056,7 @@
         "number": 384,
         "type": 0,
         "title": "Shuffle an Array",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "shuffleanArray",
         "topics": [
             0,
@@ -4070,7 +4070,7 @@
         "number": 385,
         "type": 0,
         "title": "Mini Parser",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "miniParser",
         "topics": [
             5,
@@ -4084,7 +4084,7 @@
         "number": 386,
         "type": 0,
         "title": "Lexicographical Numbers",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "lexicographicalNumbers",
         "topics": [
             13
@@ -4097,7 +4097,7 @@
         "number": 388,
         "type": 0,
         "title": "Longest Absolute File Path",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "longestAbsoluteFilePath",
         "topics": [
             5
@@ -4110,7 +4110,7 @@
         "number": 390,
         "type": 0,
         "title": "Elimination Game",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "eliminationGame",
         "topics": [
             3
@@ -4123,7 +4123,7 @@
         "number": 392,
         "type": 0,
         "title": "Is Subsequence",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "isSubsequence",
         "topics": [
             6,
@@ -4138,7 +4138,7 @@
         "number": 393,
         "type": 0,
         "title": "UTF-8 Validation",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "UTF8Validation",
         "topics": [
             22
@@ -4151,7 +4151,7 @@
         "number": 394,
         "type": 0,
         "title": "Decode String",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "decodeString",
         "topics": [
             14,
@@ -4165,7 +4165,7 @@
         "number": 395,
         "type": 0,
         "title": "Longest Substring with At Least K Repeating Characters",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "longestSubstringwithAtLeastKRepeatingCharacters",
         "topics": [
             5
@@ -4178,7 +4178,7 @@
         "number": 396,
         "type": 0,
         "title": "Rotate Function",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "rotateFunction",
         "topics": [
             3
@@ -4191,7 +4191,7 @@
         "number": 397,
         "type": 0,
         "title": "Integer Replacement",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "integerReplacement",
         "topics": [
             3,
@@ -4205,7 +4205,7 @@
         "number": 398,
         "type": 0,
         "title": "Random Pick Index",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "randomPickIndex",
         "topics": [
             33
@@ -4218,7 +4218,7 @@
         "number": 399,
         "type": 0,
         "title": "Evaluate Division",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "evaluateDivision",
         "topics": [
             23
@@ -4231,7 +4231,7 @@
         "number": 402,
         "type": 0,
         "title": "Remove K Digits",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "removeKDigits",
         "topics": [
             15,
@@ -4245,7 +4245,7 @@
         "number": 406,
         "type": 0,
         "title": "Queue Reconstruction by Height",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "queueReconstructionbyHeight",
         "topics": [
             17
@@ -4258,7 +4258,7 @@
         "number": 413,
         "type": 0,
         "title": "Arithmetic Slices",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "arithmeticSlices",
         "topics": [
             3,
@@ -4272,7 +4272,7 @@
         "number": 416,
         "type": 0,
         "title": "Partition Equal Subset Sum",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "partitionEqualSubsetSum",
         "topics": [
             9
@@ -4285,7 +4285,7 @@
         "number": 417,
         "type": 0,
         "title": "Pacific Atlantic Water Flow",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "pacificAtlanticWaterFlow",
         "topics": [
             14,
@@ -4299,7 +4299,7 @@
         "number": 419,
         "type": 0,
         "title": "Battleships in a Board",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "battleshipsinaBoard",
         "topics": [
             0
@@ -4312,7 +4312,7 @@
         "number": 421,
         "type": 0,
         "title": "Maximum XOR of Two Numbers in an Array",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "maximumXORofTwoNumbersinanArray",
         "topics": [
             11,
@@ -4326,7 +4326,7 @@
         "number": 423,
         "type": 0,
         "title": "Reconstruct Original Digits from English",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "reconstructOriginalDigitsfromEnglish",
         "topics": [
             3
@@ -4339,7 +4339,7 @@
         "number": 424,
         "type": 0,
         "title": "Longest Repeating Character Replacement",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "longestRepeatingCharacterReplacement",
         "topics": [
             4,
@@ -4353,7 +4353,7 @@
         "number": 433,
         "type": 0,
         "title": "Minimum Genetic Mutation",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "minimumGeneticMutation",
         "topics": [
             19
@@ -4368,7 +4368,7 @@
         "number": 435,
         "type": 0,
         "title": "Non-overlapping Intervals",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "nonoverlappingIntervals",
         "topics": [
             17
@@ -4381,7 +4381,7 @@
         "number": 436,
         "type": 0,
         "title": "Find Right Interval",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "findRightInterval",
         "topics": [
             6
@@ -4394,7 +4394,7 @@
         "number": 442,
         "type": 0,
         "title": "Find All Duplicates in an Array",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "findAllDuplicatesinanArray",
         "topics": [
             0
@@ -4407,7 +4407,7 @@
         "number": 445,
         "type": 0,
         "title": "Add Two Numbers II",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "addTwoNumbersII",
         "topics": [
             2
@@ -4420,7 +4420,7 @@
         "number": 449,
         "type": 0,
         "title": "Serialize and Deserialize BST",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "serializeandDeserializeBST",
         "topics": [
             12
@@ -4433,7 +4433,7 @@
         "number": 450,
         "type": 0,
         "title": "Delete Node in a BST",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "deleteNodeinaBST",
         "topics": [
             12
@@ -4446,7 +4446,7 @@
         "number": 451,
         "type": 0,
         "title": "Sort Characters By Frequency",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "sortCharactersByFrequency",
         "topics": [
             1,
@@ -4460,7 +4460,7 @@
         "number": 452,
         "type": 0,
         "title": "Minimum Number of Arrows to Burst Balloons",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "minimumNumberofArrowstoBurstBalloons",
         "topics": [
             17
@@ -4473,7 +4473,7 @@
         "number": 454,
         "type": 0,
         "title": "4Sum II",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "4SumII",
         "topics": [
             1,
@@ -4487,7 +4487,7 @@
         "number": 456,
         "type": 0,
         "title": "132 Pattern",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "132Pattern",
         "topics": [
             15
@@ -4500,7 +4500,7 @@
         "number": 462,
         "type": 0,
         "title": "Minimum Moves to Equal Array Elements II",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "minimumMovestoEqualArrayElementsII",
         "topics": [
             3
@@ -4513,7 +4513,7 @@
         "number": 464,
         "type": 0,
         "title": "Can I Win",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "canIWin",
         "topics": [
             9,
@@ -4527,7 +4527,7 @@
         "number": 468,
         "type": 0,
         "title": "Validate IP Address",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "validateIPAddress",
         "topics": [
             5
@@ -4540,7 +4540,7 @@
         "number": 473,
         "type": 0,
         "title": "Matchsticks to Square",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "matchstickstoSquare",
         "topics": [
             14
@@ -4553,7 +4553,7 @@
         "number": 474,
         "type": 0,
         "title": "Ones and Zeroes",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "onesandZeroes",
         "topics": [
             9
@@ -4566,7 +4566,7 @@
         "number": 477,
         "type": 0,
         "title": "Total Hamming Distance",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "totalHammingDistance",
         "topics": [
             22
@@ -4579,7 +4579,7 @@
         "number": 481,
         "type": 0,
         "title": "Magical String",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "magicalString",
         "topics": [
             5
@@ -4592,7 +4592,7 @@
         "number": 523,
         "type": 0,
         "title": "Continuous Subarray Sum",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "continuousSubarraySum",
         "topics": [
             3,
@@ -4608,7 +4608,7 @@
         "number": 592,
         "type": 0,
         "title": "Fraction Addition and Subtraction",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "fractionAdditionandSubtraction",
         "topics": [
             3
@@ -4621,7 +4621,7 @@
         "number": 593,
         "type": 0,
         "title": "Valid Square",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "validSquare",
         "topics": [
             3
@@ -4634,7 +4634,7 @@
         "number": 609,
         "type": 0,
         "title": "Find Duplicate File in System",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "findDuplicateFileinSystem",
         "topics": [
             1,
@@ -4648,7 +4648,7 @@
         "number": 611,
         "type": 0,
         "title": "Valid Triangle Number",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "validTriangleNumber",
         "topics": [
             0
@@ -4661,7 +4661,7 @@
         "number": 621,
         "type": 0,
         "title": "Task Scheduler",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "taskScheduler",
         "topics": [
             0,
@@ -4678,7 +4678,7 @@
         "number": 623,
         "type": 0,
         "title": "Add One Row to Tree",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "addOneRowtoTree",
         "topics": [
             12
@@ -4691,7 +4691,7 @@
         "number": 625,
         "type": 0,
         "title": "Minimum Factorization",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "minimumFactorization",
         "topics": [
             3,
@@ -4705,7 +4705,7 @@
         "number": 629,
         "type": 0,
         "title": "K Inverse Pairs Array",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "kInversePairsArray",
         "topics": [
             9
@@ -4718,7 +4718,7 @@
         "number": 630,
         "type": 0,
         "title": "Course Schedule III",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "courseScheduleIII",
         "topics": [
             17
@@ -4731,7 +4731,7 @@
         "number": 4,
         "type": 0,
         "title": "Median of Two Sorted Arrays",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "medianofTwoSortedArrays",
         "topics": [
             0,
@@ -4748,7 +4748,7 @@
         "number": 10,
         "type": 0,
         "title": "Regular Expression Matching",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "regularExpressionMatching",
         "topics": [
             5,
@@ -4765,7 +4765,7 @@
         "number": 23,
         "type": 0,
         "title": "Merge k Sorted Lists",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "mergekSortedLists",
         "topics": [
             2,
@@ -4780,7 +4780,7 @@
         "number": 25,
         "type": 0,
         "title": "Reverse Nodes in k-Group",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "reverseNodesinkGroup",
         "topics": [
             2
@@ -4795,7 +4795,7 @@
         "number": 30,
         "type": 0,
         "title": "Substring with Concatenation of All Words",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "substringwithConcatenationofAllWords",
         "topics": [
             1,
@@ -4810,7 +4810,7 @@
         "number": 32,
         "type": 0,
         "title": "Longest Valid Parentheses",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "longestValidParentheses",
         "topics": [
             5,
@@ -4826,7 +4826,7 @@
         "number": 37,
         "type": 0,
         "title": "Sudoku Solver",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "sudokuSolver",
         "topics": [
             1,
@@ -4842,7 +4842,7 @@
         "number": 41,
         "type": 0,
         "title": "First Missing Positive",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "firstMissingPositive",
         "topics": [
             0
@@ -4855,7 +4855,7 @@
         "number": 42,
         "type": 0,
         "title": "Trapping Rain Water",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "trappingRainWater",
         "topics": [
             0,
@@ -4872,7 +4872,7 @@
         "number": 44,
         "type": 0,
         "title": "Wildcard Matching",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "wildcardMatching",
         "topics": [
             5,
@@ -4890,7 +4890,7 @@
         "number": 45,
         "type": 0,
         "title": "Jump Game II",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "jumpGameII",
         "topics": [
             0,
@@ -4906,7 +4906,7 @@
         "number": 51,
         "type": 0,
         "title": "N-Queens",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "NQueens",
         "topics": [
             8
@@ -4921,7 +4921,7 @@
         "number": 52,
         "type": 0,
         "title": "N-Queens II",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "NQueensII",
         "topics": [
             8
@@ -4934,7 +4934,7 @@
         "number": 57,
         "type": 0,
         "title": "Insert Interval",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "insertInterval",
         "topics": [
             0,
@@ -4948,7 +4948,7 @@
         "number": 65,
         "type": 0,
         "title": "Valid Number",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "validNumber",
         "topics": [
             3,
@@ -4964,7 +4964,7 @@
         "number": 68,
         "type": 0,
         "title": "Text Justification",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "textJustification",
         "topics": [
             5
@@ -4979,7 +4979,7 @@
         "number": 72,
         "type": 0,
         "title": "Edit Distance",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "editDistance",
         "topics": [
             5,
@@ -4995,7 +4995,7 @@
         "number": 76,
         "type": 0,
         "title": "Minimum Window Substring",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "minimumWindowSubstring",
         "topics": [
             1,
@@ -5012,7 +5012,7 @@
         "number": 84,
         "type": 0,
         "title": "Largest Rectangle in Histogram",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "largestRectangleinHistogram",
         "topics": [
             0,
@@ -5028,7 +5028,7 @@
         "number": 85,
         "type": 0,
         "title": "Maximal Rectangle",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "maximalRectangle",
         "topics": [
             0,
@@ -5046,7 +5046,7 @@
         "number": 87,
         "type": 0,
         "title": "Scramble String",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "scrambleString",
         "topics": [
             5,
@@ -5062,7 +5062,7 @@
         "number": 97,
         "type": 0,
         "title": "Interleaving String",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "interleavingString",
         "topics": [
             5,
@@ -5076,7 +5076,7 @@
         "number": 99,
         "type": 0,
         "title": "Recover Binary Search Tree",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "recoverBinarySearchTree",
         "topics": [
             12,
@@ -5090,7 +5090,7 @@
         "number": 115,
         "type": 0,
         "title": "Distinct Subsequences",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "distinctSubsequences",
         "topics": [
             5,
@@ -5106,7 +5106,7 @@
         "number": 123,
         "type": 0,
         "title": "Best Time to Buy and Sell Stock III",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "bestTimetoBuyandSellStockIII",
         "topics": [
             0,
@@ -5120,7 +5120,7 @@
         "number": 124,
         "type": 0,
         "title": "Binary Tree Maximum Path Sum",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "binaryTreeMaximumPathSum",
         "topics": [
             12,
@@ -5136,7 +5136,7 @@
         "number": 126,
         "type": 0,
         "title": "Word Ladder II",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "wordLadderII",
         "topics": [
             0,
@@ -5157,7 +5157,7 @@
         "number": 128,
         "type": 0,
         "title": "Longest Consecutive Sequence",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "longestConsecutiveSequence",
         "topics": [
             0,
@@ -5173,7 +5173,7 @@
         "number": 132,
         "type": 0,
         "title": "Palindrome Partitioning II",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "palindromePartitioningII",
         "topics": [
             9
@@ -5188,7 +5188,7 @@
         "number": 135,
         "type": 0,
         "title": "Candy",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "candy",
         "topics": [
             17
@@ -5203,7 +5203,7 @@
         "number": 140,
         "type": 0,
         "title": "Word Break II",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "wordBreakII",
         "topics": [
             8,
@@ -5221,7 +5221,7 @@
         "number": 145,
         "type": 0,
         "title": "Binary Tree Postorder Traversal",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "binaryTreePostorderTraversal",
         "topics": [
             12,
@@ -5235,7 +5235,7 @@
         "number": 146,
         "type": 0,
         "title": "LRU Cache",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "LRUCache",
         "topics": [
             10
@@ -5250,7 +5250,7 @@
         "number": 149,
         "type": 0,
         "title": "Max Points on a Line",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "maxPointsonaLine",
         "topics": [
             1,
@@ -5266,7 +5266,7 @@
         "number": 154,
         "type": 0,
         "title": "Find Minimum in Rotated Sorted Array II",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "findMinimuminRotatedSortedArrayII",
         "topics": [
             0,
@@ -5280,7 +5280,7 @@
         "number": 158,
         "type": 0,
         "title": "Read N Characters Given Read4 II",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "readNCharactersGivenRead4II",
         "topics": [
             0
@@ -5295,7 +5295,7 @@
         "number": 164,
         "type": 0,
         "title": "Maximum Gap",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "maximumGap",
         "topics": [
             13
@@ -5310,7 +5310,7 @@
         "number": 174,
         "type": 0,
         "title": "Dungeon Game",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "dungeonGame",
         "topics": [
             11,
@@ -5324,7 +5324,7 @@
         "number": 188,
         "type": 0,
         "title": "Best Time to Buy and Sell Stock IV",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "bestTimetoBuyandSellStockIV",
         "topics": [
             9
@@ -5342,7 +5342,7 @@
         "number": 212,
         "type": 0,
         "title": "Word Search II",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "wordSearchII",
         "topics": [
             8,
@@ -5361,7 +5361,7 @@
         "number": 214,
         "type": 0,
         "title": "Shortest Palindrome",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "shortestPalindrome",
         "topics": [
             5
@@ -5374,7 +5374,7 @@
         "number": 218,
         "type": 0,
         "title": "The Skyline Problem",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "theSkylineProblem",
         "topics": [
             7,
@@ -5392,7 +5392,7 @@
         "number": 224,
         "type": 0,
         "title": "Basic Calculator",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "basicCalculator",
         "topics": [
             3,
@@ -5406,7 +5406,7 @@
         "number": 233,
         "type": 0,
         "title": "Number of Digit One",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "numberofDigitOne",
         "topics": [
             3
@@ -5419,7 +5419,7 @@
         "number": 239,
         "type": 0,
         "title": "Sliding Window Maximum",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "slidingWindowMaximum",
         "topics": [
             20
@@ -5437,7 +5437,7 @@
         "number": 248,
         "type": 0,
         "title": "Strobogrammatic Number III",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "strobogrammaticNumberIII",
         "topics": [
             5
@@ -5452,7 +5452,7 @@
         "number": 273,
         "type": 0,
         "title": "Integer to English Words",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "integertoEnglishWords",
         "topics": [
             3,
@@ -5468,7 +5468,7 @@
         "number": 282,
         "type": 0,
         "title": "Expression Add Operators",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "expressionAddOperators",
         "topics": [
             7
@@ -5483,7 +5483,7 @@
         "number": 295,
         "type": 0,
         "title": "Find Median from Data Stream",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "findMedianfromDataStream",
         "topics": [
             10,
@@ -5497,7 +5497,7 @@
         "number": 297,
         "type": 0,
         "title": "Serialize and Deserialize Binary Tree",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "serializeandDeserializeBinaryTree",
         "topics": [
             10,
@@ -5514,7 +5514,7 @@
         "number": 301,
         "type": 0,
         "title": "Remove Invalid Parentheses",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "removeInvalidParentheses",
         "topics": [
             6,
@@ -5533,7 +5533,7 @@
         "number": 312,
         "type": 0,
         "title": "Burst Balloons",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "burstBalloons",
         "topics": [
             7,
@@ -5547,7 +5547,7 @@
         "number": 315,
         "type": 0,
         "title": "Count of Smaller Numbers After Self",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "countofSmallerNumbersAfterSelf",
         "topics": [
             7,
@@ -5563,7 +5563,7 @@
         "number": 316,
         "type": 0,
         "title": "Remove Duplicate Letters",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "removeDuplicateLetters",
         "topics": [
             15,
@@ -5577,7 +5577,7 @@
         "number": 321,
         "type": 0,
         "title": "Create Maximum Number",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "createMaximumNumber",
         "topics": [
             9,
@@ -5591,7 +5591,7 @@
         "number": 327,
         "type": 0,
         "title": "Count of Range Sum",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "countofRangeSum",
         "topics": [
             7,
@@ -5605,7 +5605,7 @@
         "number": 329,
         "type": 0,
         "title": "Longest Increasing Path in a Matrix",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "longestIncreasingPathinaMatrix",
         "topics": [
             14,
@@ -5620,7 +5620,7 @@
         "number": 330,
         "type": 0,
         "title": "Patching Array",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "patchingArray",
         "topics": [
             17
@@ -5633,7 +5633,7 @@
         "number": 335,
         "type": 0,
         "title": "Self Crossing",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "selfCrossing",
         "topics": [
             3
@@ -5646,7 +5646,7 @@
         "number": 336,
         "type": 0,
         "title": "Palindrome Pairs",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "palindromePairs",
         "topics": [
             1,
@@ -5661,7 +5661,7 @@
         "number": 352,
         "type": 0,
         "title": "Data Stream as Disjoint Intervals",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "dataStreamasDisjointIntervals",
         "topics": [
             29
@@ -5674,7 +5674,7 @@
         "number": 354,
         "type": 0,
         "title": "Russian Doll Envelopes",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "russianDollEnvelopes",
         "topics": [
             6,
@@ -5688,7 +5688,7 @@
         "number": 363,
         "type": 0,
         "title": "Max Sum of Rectangle No Larger Than K",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "maxSumofRectangleNoLargerThanK",
         "topics": [
             6,
@@ -5705,7 +5705,7 @@
         "number": 391,
         "type": 0,
         "title": "Perfect Rectangle",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "perfectRectangle",
         "topics": [
             0
@@ -5718,7 +5718,7 @@
         "number": 403,
         "type": 0,
         "title": "Frog Jump",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "frogJump",
         "topics": [
             9
@@ -5731,7 +5731,7 @@
         "number": 407,
         "type": 0,
         "title": "Trapping Rain Water II",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "trappingRainWaterII",
         "topics": [
             19,
@@ -5745,7 +5745,7 @@
         "number": 410,
         "type": 0,
         "title": "Split Array Largest Sum",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "splitArrayLargestSum",
         "topics": [
             6,
@@ -5759,7 +5759,7 @@
         "number": 420,
         "type": 0,
         "title": "Strong Password Checker",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "strongPasswordChecker",
         "topics": [
             5
@@ -5772,7 +5772,7 @@
         "number": 432,
         "type": 0,
         "title": "All O`one Data Structure",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "allOoneDataStructure",
         "topics": [
             10
@@ -5785,7 +5785,7 @@
         "number": 440,
         "type": 0,
         "title": "K-th Smallest in Lexicographical Order",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "kthSmallestinLexicographicalOrder",
         "topics": [
             3
@@ -5798,7 +5798,7 @@
         "number": 446,
         "type": 0,
         "title": "Arithmetic Slices II - Subsequence",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "arithmeticSlicesIISubsequence",
         "topics": [
             9
@@ -5811,7 +5811,7 @@
         "number": 460,
         "type": 0,
         "title": "LFU Cache",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "LFUCache",
         "topics": [
             10
@@ -5824,7 +5824,7 @@
         "number": 466,
         "type": 0,
         "title": "Count The Repetitions",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "countTheRepetitions",
         "topics": [
             9
@@ -5837,7 +5837,7 @@
         "number": 467,
         "type": 0,
         "title": "Unique Substrings in Wraparound String",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "uniqueSubstringsinWraparoundString",
         "topics": [
             9
@@ -5850,7 +5850,7 @@
         "number": 472,
         "type": 0,
         "title": "Concatenated Words",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "concatenatedWords",
         "topics": [
             9,
@@ -5865,7 +5865,7 @@
         "number": 480,
         "type": 0,
         "title": "Sliding Window Median",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "slidingWindowMedian",
         "topics": [
             20
@@ -5878,7 +5878,7 @@
         "number": 552,
         "type": 0,
         "title": "Student Attendance Record II",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "studentAttendanceRecordII",
         "topics": [
             9
@@ -5891,7 +5891,7 @@
         "number": 588,
         "type": 0,
         "title": "Design In-Memory File System",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "designInMemoryFileSystem",
         "topics": [
             10
@@ -5904,7 +5904,7 @@
         "number": 10001,
         "type": 0,
         "title": "Remove Duplicate Characters",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "removeDuplicateCharacters",
         "topics": [
             1
@@ -5919,7 +5919,7 @@
         "number": 10002,
         "type": 0,
         "title": "Find Kth Nearest Point",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "findKthNearestPoint",
         "topics": [
             13
@@ -5936,7 +5936,7 @@
         "number": 10004,
         "type": 0,
         "title": "Even Tree",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "evenTree",
         "topics": [
             12
@@ -5951,7 +5951,7 @@
         "number": 10005,
         "type": 0,
         "title": "Most Continuous Appearances",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "mostContinuousAppearances",
         "topics": [
             9
@@ -5966,7 +5966,7 @@
         "number": 10006,
         "type": 0,
         "title": "Count Number Occurrence",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "countNumberOccurrence",
         "topics": [
             0,
@@ -5982,7 +5982,7 @@
         "number": 10007,
         "type": 0,
         "title": "Replace With Space",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "replaceWithSpace",
         "topics": [
             4
@@ -5997,7 +5997,7 @@
         "number": 10008,
         "type": 0,
         "title": "BST LCA with Deepest Leaf",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "bSTLCAwithDeepestLeaf",
         "topics": [
             12
@@ -6014,7 +6014,7 @@
         "number": 10009,
         "type": 0,
         "title": "Multiple Leaf Tree LCA with Deepest Leaf",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "multipleLeafTreeLCAwithDeepestLeaf",
         "topics": [
             12
@@ -6029,7 +6029,7 @@
         "number": 10010,
         "type": 0,
         "title": "Valley or Peak Element",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "valleyorPeakElement",
         "topics": [
             0,
@@ -6045,7 +6045,7 @@
         "number": 10011,
         "type": 0,
         "title": "Row With Most Ones",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "rowWithMostOnes",
         "topics": [
             21
@@ -6060,7 +6060,7 @@
         "number": 10012,
         "type": 0,
         "title": "Find the Point Where Maximum Intervals Overlap",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "findthePointWhereMaximumIntervalsOverlap",
         "topics": [
             0,
@@ -6076,7 +6076,7 @@
         "number": 10013,
         "type": 0,
         "title": "Convert a Binary Tree to a Circular Doubly Link List",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "convertaBinaryTreetoaCircularDoublyLinkList",
         "topics": [
             2
@@ -6093,7 +6093,7 @@
         "number": 10014,
         "type": 0,
         "title": "Largest subarray with equal number of 0s and 1s",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "largestSubarrayWithEqualNumberof0sAnd1s",
         "topics": [
             1
@@ -6110,7 +6110,7 @@
         "number": 10015,
         "type": 0,
         "title": "Knight Path",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "knightPath",
         "topics": [
             19
@@ -6127,7 +6127,7 @@
         "number": 10016,
         "type": 0,
         "title": "Task Schedule I",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "taskScheduleI",
         "topics": [
             1
@@ -6144,7 +6144,7 @@
         "number": 11001,
         "type": 0,
         "title": "Binary Search",
-        "difficulty": "Easy",
+        "difficulty": 0,
         "file": "binarySearch",
         "topics": [
             1
@@ -6159,7 +6159,7 @@
         "number": 11002,
         "type": 0,
         "title": "Quick Select",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "quickSelect",
         "topics": [
             7
@@ -6174,7 +6174,7 @@
         "number": 11003,
         "type": 0,
         "title": "Reverse LinkedList",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "reverseLinkedList",
         "topics": [
             2
@@ -6189,7 +6189,7 @@
         "number": 11004,
         "type": 0,
         "title": "KMP",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "KMP",
         "topics": [
             5
@@ -6204,7 +6204,7 @@
         "number": 11005,
         "type": 0,
         "title": "Combination Sum II",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "combinationSumII",
         "topics": [
             0,
@@ -6220,7 +6220,7 @@
         "number": 11006,
         "type": 0,
         "title": "Minimum Window Substring",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "minimumWindowSubstring",
         "topics": [
             1,
@@ -6237,7 +6237,7 @@
         "number": 11007,
         "type": 0,
         "title": "Tree Inorder Traversal",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "treeInorderTraversal",
         "topics": [
             1,
@@ -6254,7 +6254,7 @@
         "number": 11008,
         "type": 0,
         "title": "Tree Preorder Traversal",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "treePreorderTraversal",
         "topics": [
             1,
@@ -6271,7 +6271,7 @@
         "number": 11009,
         "type": 0,
         "title": "Tree Postorder Traversal",
-        "difficulty": "Hard",
+        "difficulty": 2,
         "file": "treePostorderTraversal",
         "topics": [
             1,
@@ -6288,7 +6288,7 @@
         "number": 11010,
         "type": 0,
         "title": "Bit Manipulation",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "bitManipulation",
         "topics": [
             22
@@ -6303,7 +6303,7 @@
         "number": 11011,
         "type": 0,
         "title": "Implement Trie",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "implementTrie",
         "topics": [
             10,
@@ -6319,7 +6319,7 @@
         "number": 11012,
         "type": 0,
         "title": "Shortest Path",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "shortestPath",
         "topics": [
             19
@@ -6334,7 +6334,7 @@
         "number": 11013,
         "type": 0,
         "title": "Bidirectional Search",
-        "difficulty": "Medium",
+        "difficulty": 1,
         "file": "bidirectionalSearch",
         "topics": [
             19

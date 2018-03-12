@@ -8,7 +8,7 @@ import com.czhang.cpms.configuration.JpaConfiguration;
 
 
 @Import(JpaConfiguration.class)
-@SpringBootApplication(scanBasePackages={"com.websystique.springboot"})// same as @Configuration @EnableAutoConfiguration @ComponentScan
+@SpringBootApplication(scanBasePackages={"com.czhang.cpms"})// same as @Configuration @EnableAutoConfiguration @ComponentScan
 public class SpringBootCRUDApp {
 
 	public static void main(String[] args) {

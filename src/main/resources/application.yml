@@ -4,14 +4,14 @@ server:
   contextPath: /SpringBootCRUDApp
 ---
 spring:
-  profiles: local, default
+  profiles: local,default
 datasource:
   sampleapp:
     url: jdbc:oracle:thin:@localhost:1521:xe
     username: czhang
     password: 78320
     driverClassName: jdbc.driver.OracleDriver
-    defaultSchema:
+    defaultSchema: czhang
     maxPoolSize: 10
     hibernate:
       hbm2ddl.method: create-drop

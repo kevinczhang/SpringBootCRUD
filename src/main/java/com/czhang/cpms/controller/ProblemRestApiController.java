@@ -18,6 +18,7 @@ import org.springframework.web.util.UriComponentsBuilder;
 
 import com.czhang.cpms.model.Problem;
 import com.czhang.cpms.model.ProblemJson;
+import com.czhang.cpms.model.domain.ProblemJsonModel;
 import com.czhang.cpms.service.ProblemService;
 import com.czhang.cpms.util.CustomErrorType;
 
@@ -32,9 +33,7 @@ public class ProblemRestApiController {
 	@Autowired
 	ProblemService problemService;
 
-	// -------------------Retrieve All Problems
-	// --------------------------------------
-
+	// -------------------Retrieve All Problems---------------------
 	@RequestMapping(value = "/problem/", method = RequestMethod.GET)
 	public ResponseEntity<List<ProblemJson>> listAllUsers() {
 		List<ProblemJson> problems = problemService.findAllProblems();
@@ -45,9 +44,7 @@ public class ProblemRestApiController {
 		return new ResponseEntity<>(problems, HttpStatus.OK);
 	}
 
-	// -------------------Retrieve Single Problem
-	// ---------------------------------------
-
+	// -------------------Retrieve Single Problem---------------------
 	@RequestMapping(value = "/problem/{id}", method = RequestMethod.GET)
 	public ResponseEntity<?> getProblem(@PathVariable("id") long id) {
 		logger.info("Fetching User with id {}", id);
@@ -59,9 +56,7 @@ public class ProblemRestApiController {
 		return new ResponseEntity<>(new ProblemJson(problem), HttpStatus.OK);
 	}
 
-	// -------------------Create a Problem
-	// ---------------------------------------
-
+	// -------------------Create a Problem-----------------------------
 	@RequestMapping(value = "/problem/", method = RequestMethod.POST)
 	public ResponseEntity<?> createUser(@RequestBody ProblemJson problem, UriComponentsBuilder ucBuilder) {
 		logger.info("Creating Problem : {}", problem);
@@ -78,11 +73,10 @@ public class ProblemRestApiController {
 		return new ResponseEntity<>(headers, HttpStatus.CREATED);
 	}
 
-	// ------------------- Import Problems ---------------------------------------
-
+	// ------------------- Import Problems ------------------------------------
 	@RequestMapping(value = "/problem/import/", method = RequestMethod.POST)
-	public ResponseEntity<?> importProblems(@RequestBody List<ProblemJson> problems, UriComponentsBuilder ucBuilder) {
-		for(ProblemJson problem : problems){
+	public ResponseEntity<?> importProblems(@RequestBody List<ProblemJsonModel> problems, UriComponentsBuilder ucBuilder) {
+		for(ProblemJsonModel problem : problems){
 			logger.info("Creating Problem : {}", problem);
 			problemService.saveProblem(problem);
 		}
@@ -90,9 +84,7 @@ public class ProblemRestApiController {
 		return new ResponseEntity<>(headers, HttpStatus.CREATED);
 	}
 
-	// ------------------- Update a Problem
-	// ----------------------------------------
-
+	// ------------------- Update a Problem------------------------------------
 	@RequestMapping(value = "/problem/{id}", method = RequestMethod.PUT)
 	public ResponseEntity<?> updateProblem(@PathVariable("id") long id, @RequestBody Problem problem) {
 		logger.info("Updating User with id {}", id);
@@ -117,9 +109,7 @@ public class ProblemRestApiController {
 		return new ResponseEntity<>(currentProblem, HttpStatus.OK);
 	}
 
-	// ------------------- Delete a
-	// PRoblem-----------------------------------------
-
+	// ------------------- Delete a PRoblem-------------------------------
 	@RequestMapping(value = "/problem/{id}", method = RequestMethod.DELETE)
 	public ResponseEntity<?> deleteProblem(@PathVariable("id") long id) {
 		logger.info("Fetching & Deleting Problem with id {}", id);
@@ -135,7 +125,6 @@ public class ProblemRestApiController {
 	}
 
 	// ------------------- Delete All Problems-----------------------------
-
 	@RequestMapping(value = "/problem/", method = RequestMethod.DELETE)
 	public ResponseEntity<Problem> deleteAllProblems() {
 		logger.info("Deleting All Problems");

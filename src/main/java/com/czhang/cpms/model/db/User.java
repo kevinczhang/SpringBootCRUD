@@ -1,4 +1,4 @@
-package com.czhang.cpms.model;
+package com.czhang.cpms.model.db;
 
 import org.hibernate.validator.constraints.NotEmpty;
 

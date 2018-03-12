@@ -4,7 +4,6 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +14,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.czhang.cpms.model.Problem;
 import com.czhang.cpms.model.ProblemJson;
+import com.czhang.cpms.model.domain.ProblemJsonModel;
 import com.czhang.cpms.repositories.ProblemRepository;
 
 @Service("problemService")
@@ -27,11 +27,13 @@ public class ProblemServiceImpl implements ProblemService {
 	ResourceLoader resourceLoader;
 
 	public Problem findById(Long id) {
-		return problemRepository.findOne(id);
+		// return problemRepository.findOne(id);
+		return null;
 	}
 
 	public Problem findByName(String name) {
-		return problemRepository.findByName(name);
+		// return problemRepository.findByName(name);
+		return null;
 	}
 
 	public void saveProblem(ProblemJson problem) {
@@ -45,16 +47,34 @@ public class ProblemServiceImpl implements ProblemService {
 			e.printStackTrace();
 		}
 
-		Problem newProblem = new Problem(problem);
+		com.czhang.cpms.model.db.Problem newProblem = new com.czhang.cpms.model.db.Problem(problem);
+		problemRepository.save(newProblem);
+	}
+	
+	public void saveProblem(ProblemJsonModel problem) {
+		Resource solutionResource = resourceLoader.getResource("classpath:/solutions/" + problem.getFile() +".java");
+		Resource descriptionResource = resourceLoader.getResource("classpath:/descriptions/" + problem.getFile() +".html");
+		try {
+			InputStream solutionInputStream = solutionResource.getInputStream();
+			InputStream descriptionInputStream = descriptionResource.getInputStream();
+			String solution = readFromInputStream(solutionInputStream);
+			String description = readFromInputStream(descriptionInputStream);
+			problem.setSolution(solution);
+			problem.setDescription(description);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+		com.czhang.cpms.model.db.Problem newProblem = new com.czhang.cpms.model.db.Problem(problem);
 		problemRepository.save(newProblem);
 	}
 
 	public void updateProblem(Problem problem) {
-		problemRepository.save(problem);
+		//problemRepository.save(problem);
 	}
 
 	public void deleteProblemById(Long id) {
-		problemRepository.delete(id);
+		//problemRepository.delete(id);
 	}
 
 	public void deleteAllProblems() {
@@ -62,12 +82,13 @@ public class ProblemServiceImpl implements ProblemService {
 	}
 
 	public List<ProblemJson> findAllProblems() {
-		List<Problem> allProblems = problemRepository.findAll();
-		List<ProblemJson> res = new ArrayList<>();
-		for (Problem p : allProblems) {
-			res.add(new ProblemJson(p));
-		}
-		return res;
+//		List<Problem> allProblems = problemRepository.findAll();
+//		List<ProblemJson> res = new ArrayList<>();
+//		for (Problem p : allProblems) {
+//			res.add(new ProblemJson(p));
+//		}
+//		return res;
+		return null;
 	}
 
 	public boolean isProblemExist(ProblemJson problem) {

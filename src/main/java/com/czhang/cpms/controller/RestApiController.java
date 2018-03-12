@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.util.UriComponentsBuilder;
 
-import com.czhang.cpms.model.User;
+import com.czhang.cpms.model.db.User;
 import com.czhang.cpms.service.UserService;
 import com.czhang.cpms.util.CustomErrorType;
 

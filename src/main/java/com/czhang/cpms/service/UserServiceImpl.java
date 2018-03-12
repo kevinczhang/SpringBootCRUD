@@ -2,7 +2,7 @@ package com.czhang.cpms.service;
 
 import java.util.List;
 
-import com.czhang.cpms.model.User;
+import com.czhang.cpms.model.db.User;
 import com.czhang.cpms.repositories.UserRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
