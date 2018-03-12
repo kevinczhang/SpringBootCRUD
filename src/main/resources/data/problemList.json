@@ -3962,7 +3962,7 @@
         "file": "guessNumberHigherorLowerII",
         "topics": [
             9,
-            31
+            29
         ],
         "companies": [],
         "tags": []
@@ -4046,7 +4046,7 @@
         "difficulty": 1,
         "file": "linkedListRandomNode",
         "topics": [
-            33
+            2
         ],
         "companies": [],
         "tags": []
@@ -4059,8 +4059,7 @@
         "difficulty": 1,
         "file": "shuffleanArray",
         "topics": [
-            0,
-            33
+            0
         ],
         "companies": [],
         "tags": []
@@ -4208,7 +4207,7 @@
         "difficulty": 1,
         "file": "randomPickIndex",
         "topics": [
-            33
+            31
         ],
         "companies": [],
         "tags": []
@@ -4517,7 +4516,7 @@
         "file": "canIWin",
         "topics": [
             9,
-            33
+            29
         ],
         "companies": [],
         "tags": []
@@ -4694,8 +4693,7 @@
         "difficulty": 1,
         "file": "minimumFactorization",
         "topics": [
-            3,
-            32
+            3
         ],
         "companies": [],
         "tags": []
@@ -5903,9 +5901,9 @@
         "source": 1,
         "number": 10001,
         "type": 0,
-        "title": "Remove Duplicate Characters",
+        "title": "Remove Duplicate Letters",
         "difficulty": 0,
-        "file": "removeDuplicateCharacters",
+        "file": "removeDuplicateLetters",
         "topics": [
             1
         ],

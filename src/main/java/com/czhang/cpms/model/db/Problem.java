@@ -44,8 +44,8 @@ public class Problem {
 		this.title = problem.getTitle();
 		this.difficulty = Constants.levels[problem.getDifficulty()].name();
 		this.topics = Arrays.toString(problem.getTopics()).replaceAll("[\\[\\]\"]", "");
-		this.companies = Arrays.toString(problem.getCompanies());
-		this.tags = Arrays.toString(problem.getTags());
+		this.companies = Arrays.toString(problem.getCompanies()).replaceAll("[\\[\\]\"]", "");
+		this.tags = Arrays.toString(problem.getTags()).replaceAll("[\\[\\]\"]", "");
 		this.description = Base64.getEncoder().encode(problem.getDescription().getBytes());
 		this.solution = Base64.getEncoder().encode(problem.getSolution().getBytes());
 	}

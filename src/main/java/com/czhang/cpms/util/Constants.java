@@ -7,14 +7,16 @@ import com.czhang.cpms.model.enums.Source;
 import com.czhang.cpms.model.enums.Topic;
 
 public class Constants {
-	public static final Topic[] topics = {Topic.Array, Topic.HashTable, Topic.LinkedList, Topic.Math, 
-			Topic.TwoPointer, Topic.String, Topic.BinarySearch, Topic.DAndC, Topic.Backtrack, Topic.DP, 
-			Topic.Design, Topic.Trie, Topic.Tree, Topic.Sort, Topic.DFS, Topic.Stack, Topic.UnionFind, 
-			Topic.Greedy, Topic.Queue,	Topic.BFS, Topic.Heap, Topic.Matrix, Topic.BitManipulation, 
-			Topic.Graph, Topic.TopologicalSort, Topic.BITree, Topic.SegmentTree, Topic.BST, 
-			Topic.Memorization, Topic.Minimax, Topic.Recursion, Topic.ReservoirSampling};
+	public static final Topic[] topics = {
+			Topic.Array, Topic.HashTable, Topic.LinkedList, Topic.Math, Topic.TwoPointer, 
+			Topic.String, Topic.BinarySearch, Topic.DAndC, Topic.Backtrack, Topic.DP, 
+			Topic.Design, Topic.Trie, Topic.Tree, Topic.Sort, Topic.DFS, 
+			Topic.Stack, Topic.UnionFind, Topic.Greedy, Topic.Queue, Topic.BFS, 
+			Topic.Heap, Topic.Matrix, Topic.BitManipulation, Topic.Graph, Topic.TopologicalSort, 
+			Topic.BITree, Topic.SegmentTree, Topic.BST, Topic.Memorization, Topic.Minimax, 
+			Topic.Recursion, Topic.ReservoirSampling};
 	
-	public static final Source[] sources = {Source.LeetCode};
+	public static final Source[] sources = {Source.LeetCode, Source.Facebook, Source.CodeSnippet};
 	
 	public static final ProblemType[] types = {ProblemType.Algorithm, ProblemType.Database, 
 			ProblemType.OODesign, ProblemType.SystemDesign};
