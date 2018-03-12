@@ -1,6 +1,8 @@
 package com.czhang.cpms.controller;
 
+import java.math.BigInteger;
 import java.util.List;
+import java.util.UUID;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -16,10 +18,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.util.UriComponentsBuilder;
 
-import com.czhang.cpms.model.Problem;
+import com.czhang.cpms.model.db.Problem;
 import com.czhang.cpms.model.ProblemJson;
 import com.czhang.cpms.model.domain.ProblemJsonModel;
 import com.czhang.cpms.service.ProblemService;
+import com.czhang.cpms.util.CommonMethods;
 import com.czhang.cpms.util.CustomErrorType;
 
 @RestController
@@ -35,8 +38,8 @@ public class ProblemRestApiController {
 
 	// -------------------Retrieve All Problems---------------------
 	@RequestMapping(value = "/problem/", method = RequestMethod.GET)
-	public ResponseEntity<List<ProblemJson>> listAllUsers() {
-		List<ProblemJson> problems = problemService.findAllProblems();
+	public ResponseEntity<List<ProblemJsonModel>> listAllProblems() {
+		List<ProblemJsonModel> problems = problemService.findAllProblems();
 		if (problems.isEmpty()) {
 			return new ResponseEntity<>(HttpStatus.NO_CONTENT);
 			// You many decide to return HttpStatus.NOT_FOUND
@@ -46,14 +49,15 @@ public class ProblemRestApiController {
 
 	// -------------------Retrieve Single Problem---------------------
 	@RequestMapping(value = "/problem/{id}", method = RequestMethod.GET)
-	public ResponseEntity<?> getProblem(@PathVariable("id") long id) {
+	public ResponseEntity<?> getProblem(@PathVariable("id") String id) {
 		logger.info("Fetching User with id {}", id);
-		Problem problem = problemService.findById(id);
+		UUID problemId = CommonMethods.convertStringToUUID(id);
+		Problem problem = problemService.findById(problemId);
 		if (problem == null) {
 			logger.error("User with id {} not found.", id);
 			return new ResponseEntity<>(new CustomErrorType("User with id " + id + " not found"), HttpStatus.NOT_FOUND);
 		}
-		return new ResponseEntity<>(new ProblemJson(problem), HttpStatus.OK);
+		return new ResponseEntity<>(new ProblemJsonModel(problem), HttpStatus.OK);
 	}
 
 	// -------------------Create a Problem-----------------------------
@@ -86,7 +90,7 @@ public class ProblemRestApiController {
 
 	// ------------------- Update a Problem------------------------------------
 	@RequestMapping(value = "/problem/{id}", method = RequestMethod.PUT)
-	public ResponseEntity<?> updateProblem(@PathVariable("id") long id, @RequestBody Problem problem) {
+	public ResponseEntity<?> updateProblem(@PathVariable("id") UUID id, @RequestBody Problem problem) {
 		logger.info("Updating User with id {}", id);
 		Problem currentProblem = problemService.findById(id);
 
@@ -96,9 +100,8 @@ public class ProblemRestApiController {
 					HttpStatus.NOT_FOUND);
 		}
 
-		currentProblem.setName(problem.getName());
+		currentProblem.setTitle(problem.getTitle());
 		currentProblem.setTags(problem.getTags());
-		currentProblem.setSpecialtags(problem.getSpecialtags());
 		currentProblem.setSolution(problem.getSolution());
 		currentProblem.setNumber(problem.getNumber());
 		currentProblem.setDifficulty(problem.getDifficulty());
@@ -111,7 +114,7 @@ public class ProblemRestApiController {
 
 	// ------------------- Delete a PRoblem-------------------------------
 	@RequestMapping(value = "/problem/{id}", method = RequestMethod.DELETE)
-	public ResponseEntity<?> deleteProblem(@PathVariable("id") long id) {
+	public ResponseEntity<?> deleteProblem(@PathVariable("id") UUID id) {
 		logger.info("Fetching & Deleting Problem with id {}", id);
 
 		Problem problem = problemService.findById(id);

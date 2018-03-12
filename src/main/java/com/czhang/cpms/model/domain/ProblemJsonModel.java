@@ -1,5 +1,12 @@
 package com.czhang.cpms.model.domain;
 
+import java.util.Arrays;
+import java.util.Base64;
+import java.util.List;
+
+import com.czhang.cpms.model.db.Problem;
+import com.czhang.cpms.model.enums.Source;
+import com.czhang.cpms.util.Constants;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
@@ -28,6 +35,38 @@ public class ProblemJsonModel {
 	String description;
 	
 	public ProblemJsonModel(){}
+
+	public ProblemJsonModel(Problem p) {
+		this.source = getIndex(Constants.sources, p.getSource());
+		this.number = p.getNumber();
+		this.type = getIndex(Constants.types, p.getType());
+		this.title = p.getTitle();
+		this.difficulty = getIndex(Constants.levels, p.getDifficulty());
+		this.topics = convertToIntArray(p.getTopics());
+		this.companies = convertToIntArray(p.getCompanies());
+		this.tags = convertToIntArray(p.getTags());
+		this.solution = new String(Base64.getDecoder().decode(p.getSolution()));
+		this.description = new String(Base64.getDecoder().decode(p.getDescription()));
+	}
+
+	private <E extends Enum<E>> int getIndex(List<E> enums, String str) {
+		for(E e : enums){
+			if(e.name().equals(str))
+				return enums.indexOf(e);
+		}
+		return -1;
+	}
+
+	private int[] convertToIntArray(String str) {
+		if(str == null || str.length() == 0)
+			return new int[]{};
+		String[] strArray = str.split(", ");
+		int[] res = new int[strArray.length];
+		for(int i = 0; i < strArray.length; i++){
+			res[i] = Integer.parseInt(strArray[i]);
+		}
+		return res;
+	}
 
 	public int getSource() {
 		return source;

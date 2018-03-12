@@ -38,11 +38,11 @@ public class Problem {
 
 	public Problem(ProblemJsonModel problem) {
 		this.id = UUID.randomUUID();
-		this.source = Constants.sources[problem.getSource()].name();
+		this.source = Constants.sources.get(problem.getSource()).name();
 		this.number = problem.getNumber();
-		this.type = Constants.types[problem.getType()].name();
+		this.type = Constants.types.get(problem.getType()).name();
 		this.title = problem.getTitle();
-		this.difficulty = Constants.levels[problem.getDifficulty()].name();
+		this.difficulty = Constants.levels.get(problem.getDifficulty()).name();
 		this.topics = Arrays.toString(problem.getTopics()).replaceAll("[\\[\\]\"]", "");
 		this.companies = Arrays.toString(problem.getCompanies()).replaceAll("[\\[\\]\"]", "");
 		this.tags = Arrays.toString(problem.getTags()).replaceAll("[\\[\\]\"]", "");
