@@ -62,18 +62,18 @@ public class ProblemRestApiController {
 
 	// -------------------Create a Problem-----------------------------
 	@RequestMapping(value = "/problem/", method = RequestMethod.POST)
-	public ResponseEntity<?> createUser(@RequestBody ProblemJson problem, UriComponentsBuilder ucBuilder) {
+	public ResponseEntity<?> createUser(@RequestBody ProblemJsonModel problem, UriComponentsBuilder ucBuilder) {
 		logger.info("Creating Problem : {}", problem);
 		if (problemService.isProblemExist(problem)) {
-			logger.error("Unable to create. A Problem with name {} already exist", problem.getTITLE());
+			logger.error("Unable to create. A Problem with name {} already exist", problem.getTitle());
 			return new ResponseEntity<>(
-					new CustomErrorType("Unable to create. A User with name " + problem.getTITLE() + " already exist."),
+					new CustomErrorType("Unable to create. A User with name " + problem.getTitle() + " already exist."),
 					HttpStatus.CONFLICT);
 		}
-		problemService.saveProblem(problem);
+		Problem newProblem = problemService.saveProblem(problem);
 
 		HttpHeaders headers = new HttpHeaders();
-		headers.setLocation(ucBuilder.path("/api/problem/{id}").buildAndExpand(problem.getID()).toUri());
+		headers.setLocation(ucBuilder.path("/api/problem/{id}").buildAndExpand(newProblem.getId()).toUri());
 		return new ResponseEntity<>(headers, HttpStatus.CREATED);
 	}
 

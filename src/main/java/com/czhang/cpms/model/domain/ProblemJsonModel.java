@@ -1,11 +1,9 @@
 package com.czhang.cpms.model.domain;
 
-import java.util.Arrays;
 import java.util.Base64;
 import java.util.List;
 
 import com.czhang.cpms.model.db.Problem;
-import com.czhang.cpms.model.enums.Source;
 import com.czhang.cpms.util.Constants;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -29,9 +27,9 @@ public class ProblemJsonModel {
 	int[] companies;
 	@JsonProperty("tags")
 	int[] tags;
-	@JsonIgnore
+	@JsonProperty("solution")
 	String solution;
-	@JsonIgnore
+	@JsonProperty("description")
 	String description;
 	
 	public ProblemJsonModel(){}

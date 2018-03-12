@@ -10,11 +10,11 @@ import com.czhang.cpms.model.domain.ProblemJsonModel;
 public interface ProblemService {
 	Problem findById(UUID id);
 
-	Problem findByName(String name);
+	Problem findByTitle(String title);
 
 	void saveProblem(ProblemJson problem);
 	
-	void saveProblem(ProblemJsonModel problem);
+	Problem saveProblem(ProblemJsonModel problem);
 
 	void updateProblem(Problem problem);
 
@@ -24,5 +24,5 @@ public interface ProblemService {
 
 	List<ProblemJsonModel> findAllProblems();
 
-	boolean isProblemExist(ProblemJson problem);
+	boolean isProblemExist(ProblemJsonModel problem);
 }

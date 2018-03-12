@@ -32,9 +32,8 @@ public class ProblemServiceImpl implements ProblemService {
 		return problemRepository.findOne(id);
 	}
 
-	public Problem findByName(String name) {
-		// return problemRepository.findByName(name);
-		return null;
+	public Problem findByTitle(String title) {
+		return problemRepository.findByTitle(title);		
 	}
 
 	public void saveProblem(ProblemJson problem) {
@@ -52,7 +51,7 @@ public class ProblemServiceImpl implements ProblemService {
 		problemRepository.save(newProblem);
 	}
 	
-	public void saveProblem(ProblemJsonModel problem) {
+	public Problem saveProblem(ProblemJsonModel problem) {
 		Resource solutionResource = resourceLoader.getResource("classpath:/solutions/" + problem.getFile() +".java");
 		Resource descriptionResource = resourceLoader.getResource("classpath:/descriptions/" + problem.getFile() +".html");
 		try {
@@ -67,7 +66,7 @@ public class ProblemServiceImpl implements ProblemService {
 		}
 
 		com.czhang.cpms.model.db.Problem newProblem = new com.czhang.cpms.model.db.Problem(problem);
-		problemRepository.save(newProblem);
+		return problemRepository.save(newProblem);
 	}
 
 	public void updateProblem(Problem problem) {
@@ -91,8 +90,8 @@ public class ProblemServiceImpl implements ProblemService {
 		return res;
 	}
 
-	public boolean isProblemExist(ProblemJson problem) {
-		return findByName(problem.getTITLE()) != null;
+	public boolean isProblemExist(ProblemJsonModel problem) {
+		return findByTitle(problem.getTitle()) != null;
 	}
 
 	private String readFromInputStream(InputStream inputStream) throws IOException {
