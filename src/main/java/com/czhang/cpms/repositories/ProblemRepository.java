@@ -5,11 +5,11 @@ import java.util.UUID;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.czhang.cpms.model.db.Problem;
+import com.czhang.cpms.model.db.ProblemDAO;
 
 @Repository
-public interface ProblemRepository extends JpaRepository<Problem, UUID>{
+public interface ProblemRepository extends JpaRepository<ProblemDAO, UUID>{
 
-	Problem findByTitle(String title);
+	ProblemDAO findByTitle(String title);
 
 }

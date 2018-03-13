@@ -3,12 +3,12 @@ package com.czhang.cpms.model.domain;
 import java.util.Base64;
 import java.util.List;
 
-import com.czhang.cpms.model.db.Problem;
+import com.czhang.cpms.model.db.ProblemDAO;
 import com.czhang.cpms.util.Constants;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class ProblemJsonModel {
+public class Problem {
 	@JsonProperty("source")
 	int source;
 	@JsonProperty("number")
@@ -32,9 +32,9 @@ public class ProblemJsonModel {
 	@JsonProperty("description")
 	String description;
 	
-	public ProblemJsonModel(){}
+	public Problem(){}
 
-	public ProblemJsonModel(Problem p) {
+	public Problem(ProblemDAO p) {
 		this.source = getIndex(Constants.sources, p.getSource());
 		this.number = p.getNumber();
 		this.type = getIndex(Constants.types, p.getType());

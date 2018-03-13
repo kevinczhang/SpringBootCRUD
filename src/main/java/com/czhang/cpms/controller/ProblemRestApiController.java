@@ -17,11 +17,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.util.UriComponentsBuilder;
 
-import com.czhang.cpms.model.db.Problem;
-import com.czhang.cpms.model.domain.ProblemJsonModel;
+import com.czhang.cpms.model.db.ProblemDAO;
+import com.czhang.cpms.model.domain.Problem;
+import com.czhang.cpms.model.response.ProblemResponse;
 import com.czhang.cpms.service.ProblemService;
-import com.czhang.cpms.util.CommonMethods;
-import com.czhang.cpms.util.CustomErrorType;
+import com.czhang.cpms.util.ProblemServiceHelper;
 
 @RestController
 @RequestMapping("/api")
@@ -36,94 +36,124 @@ public class ProblemRestApiController {
 
 	// -------------------Retrieve All Problems---------------------
 	@RequestMapping(value = "/problem/", method = RequestMethod.GET)
-	public ResponseEntity<List<ProblemJsonModel>> listAllProblems() {
-		List<ProblemJsonModel> problems = problemService.findAllProblems();
+	public ResponseEntity<ProblemResponse> listAllProblems() {
+		ProblemResponse response = new ProblemResponse();
+		List<Problem> problems = problemService.findAllProblems();		
 		if (problems.isEmpty()) {
+			response.setSuccess(true);
+			response.setMessage("No problems found");
 			return new ResponseEntity<>(HttpStatus.NO_CONTENT);
 			// You many decide to return HttpStatus.NOT_FOUND
 		}
-		return new ResponseEntity<>(problems, HttpStatus.OK);
+		response.setPayload(problems);
+		response.setSuccess(true);
+		response.setMessage("Get all problems.");
+		return new ResponseEntity<>(response, HttpStatus.OK);
 	}
 
 	// -------------------Retrieve Single Problem---------------------
 	@RequestMapping(value = "/problem/{id}", method = RequestMethod.GET)
-	public ResponseEntity<?> getProblem(@PathVariable("id") String id) {
+	public ResponseEntity<ProblemResponse> getProblem(@PathVariable("id") String id) {
 		logger.info("Fetching User with id {}", id);
-		UUID problemId = CommonMethods.convertStringToUUID(id);
-		Problem problem = problemService.findById(problemId);
+		ProblemResponse response = new ProblemResponse();
+		UUID problemId = ProblemServiceHelper.convertStringToUUID(id);
+		ProblemDAO problem = problemService.findById(problemId);
 		if (problem == null) {
-			logger.error("User with id {} not found.", id);
-			return new ResponseEntity<>(new CustomErrorType("User with id " + id + " not found"), HttpStatus.NOT_FOUND);
+			String message = "Problem with id " + id + " not found.";
+			logger.error(message);
+			response.setSuccess(true);
+			response.setMessage(message);
+			return new ResponseEntity<>(response, HttpStatus.NOT_FOUND);
 		}
-		return new ResponseEntity<>(new ProblemJsonModel(problem), HttpStatus.OK);
+		response.setSuccess(true);
+		response.setMessage("Get the problem");
+		response.setPayload(new Problem(problem));
+		return new ResponseEntity<>(response, HttpStatus.OK);
 	}
 
 	// -------------------Create a Problem-----------------------------
 	@RequestMapping(value = "/problem/", method = RequestMethod.POST)
-	public ResponseEntity<?> createUser(@RequestBody ProblemJsonModel problem, UriComponentsBuilder ucBuilder) {
+	public ResponseEntity<ProblemResponse> createUser(@RequestBody Problem problem, UriComponentsBuilder ucBuilder) {
 		logger.info("Creating Problem : {}", problem);
+		ProblemResponse response = new ProblemResponse();
 		if (problemService.isProblemExist(problem)) {
-			logger.error("Unable to create. A Problem with name {} already exist", problem.getTitle());
-			return new ResponseEntity<>(
-					new CustomErrorType("Unable to create. A User with name " + problem.getTitle() + " already exist."),
-					HttpStatus.CONFLICT);
+			String message = "Unable to create. A Problem with name " + problem.getTitle() + " already exist";
+			logger.error(message);
+			response.setSuccess(false);
+			response.setMessage(message);
+			return new ResponseEntity<>(response, HttpStatus.CONFLICT);
 		}
-		Problem newProblem = problemService.saveProblem(problem);
-
+		ProblemDAO newProblem = problemService.saveProblem(problem);
 		HttpHeaders headers = new HttpHeaders();
 		headers.setLocation(ucBuilder.path("/api/problem/{id}").buildAndExpand(newProblem.getId()).toUri());
-		return new ResponseEntity<>(headers, HttpStatus.CREATED);
+		response.setSuccess(true);
+		response.setMessage("New user created");
+		response.setPayload(headers);
+		return new ResponseEntity<>(response, HttpStatus.CREATED);
 	}
 
 	// ------------------- Import Problems ------------------------------------
 	@RequestMapping(value = "/problem/import/", method = RequestMethod.POST)
-	public ResponseEntity<?> importProblems(@RequestBody List<ProblemJsonModel> problems, UriComponentsBuilder ucBuilder) {
-		for(ProblemJsonModel problem : problems){
+	public ResponseEntity<ProblemResponse> importProblems(@RequestBody List<Problem> problems, UriComponentsBuilder ucBuilder) {
+		ProblemResponse response = new ProblemResponse();
+		for(Problem problem : problems){
 			logger.info("Creating Problem : {}", problem);
 			problemService.saveProblem(problem);
 		}
-		HttpHeaders headers = new HttpHeaders();
-		return new ResponseEntity<>(headers, HttpStatus.CREATED);
+		response.setSuccess(true);
+		response.setMessage("Problems imported");
+		response.setPayload(new HttpHeaders());
+		return new ResponseEntity<>(response, HttpStatus.CREATED);
 	}
 
 	// ------------------- Update a Problem------------------------------------
 	@RequestMapping(value = "/problem/{id}", method = RequestMethod.PUT)
-	public ResponseEntity<?> updateProblem(@PathVariable("id") String id, @RequestBody ProblemJsonModel problem) {
+	public ResponseEntity<ProblemResponse> updateProblem(@PathVariable("id") String id, @RequestBody Problem problem) {
 		logger.info("Updating User with id {}", id);
-		UUID problemId = CommonMethods.convertStringToUUID(id);
-		Problem currentProblem = problemService.findById(problemId);
+		ProblemResponse response = new ProblemResponse();
+		UUID problemId = ProblemServiceHelper.convertStringToUUID(id);
+		ProblemDAO currentProblem = problemService.findById(problemId);
 
 		if (currentProblem == null) {
-			logger.error("Unable to update. Problem with id {} not found.", id);
-			return new ResponseEntity<>(new CustomErrorType("Unable to upate. User with id " + id + " not found."),
-					HttpStatus.NOT_FOUND);
+			String message = "Unable to update. Problem with id " + id + " not found.";
+			logger.error(message);
+			response.setSuccess(false);
+			response.setMessage(message);
+			return new ResponseEntity<>(response, HttpStatus.NOT_FOUND);
 		}
 
-		currentProblem = new Problem(problem);
+		currentProblem = new ProblemDAO(problem);
 		currentProblem.setId(problemId);
-
-		problemService.updateProblem(currentProblem);
-		return new ResponseEntity<>(currentProblem, HttpStatus.OK);
+		problemService.updateProblem(currentProblem);		
+		response.setSuccess(true);
+		response.setMessage("Problem updated");
+		response.setPayload(new Problem(currentProblem));
+		return new ResponseEntity<>(response, HttpStatus.OK);
 	}
 
 	// ------------------- Delete a PRoblem-------------------------------
 	@RequestMapping(value = "/problem/{id}", method = RequestMethod.DELETE)
-	public ResponseEntity<?> deleteProblem(@PathVariable("id") String id) {
+	public ResponseEntity<ProblemResponse> deleteProblem(@PathVariable("id") String id) {
 		logger.info("Fetching & Deleting Problem with id {}", id);
-		UUID problemId = CommonMethods.convertStringToUUID(id);
-		Problem problem = problemService.findById(problemId);
+		ProblemResponse response = new ProblemResponse();
+		UUID problemId = ProblemServiceHelper.convertStringToUUID(id);
+		ProblemDAO problem = problemService.findById(problemId);
 		if (problem == null) {
-			logger.error("Unable to delete. User with id {} not found.", id);
-			return new ResponseEntity<>(new CustomErrorType("Unable to delete. User with id " + id + " not found."),
-					HttpStatus.NOT_FOUND);
+			String message = "Unable to delete. User with id " + id + " not found.";
+			logger.error(message);
+			response.setSuccess(false);
+			response.setMessage(message);
+			return new ResponseEntity<>(response, HttpStatus.NOT_FOUND);
 		}
 		problemService.deleteProblemById(problemId);
-		return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+		response.setSuccess(true);
+		response.setMessage("Problem deleted");
+		return new ResponseEntity<>(response, HttpStatus.NO_CONTENT);
 	}
 
 	// ------------------- Delete All Problems-----------------------------
 	@RequestMapping(value = "/problem/", method = RequestMethod.DELETE)
-	public ResponseEntity<Problem> deleteAllProblems() {
+	public ResponseEntity<ProblemDAO> deleteAllProblems() {
 		logger.info("Deleting All Problems");
 
 		problemService.deleteAllProblems();

@@ -8,12 +8,14 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Lob;
+import javax.persistence.Table;
 
-import com.czhang.cpms.model.domain.ProblemJsonModel;
+import com.czhang.cpms.model.domain.Problem;
 import com.czhang.cpms.util.Constants;
 
 @Entity
-public class Problem {
+@Table(name = "Problem")
+public class ProblemDAO {
 	
 	@Id	
 	UUID id;
@@ -33,9 +35,9 @@ public class Problem {
 	@Column(length=100000)
 	byte[] solution;
 	
-	public Problem(){}
+	public ProblemDAO(){}
 
-	public Problem(ProblemJsonModel problem) {
+	public ProblemDAO(Problem problem) {
 		this.id = UUID.randomUUID();
 		this.source = Constants.sources.get(problem.getSource()).name();
 		this.number = problem.getNumber();
