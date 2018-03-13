@@ -70,11 +70,11 @@ public class ProblemServiceImpl implements ProblemService {
 	}
 
 	public void updateProblem(Problem problem) {
-		//problemRepository.save(problem);
+		problemRepository.save(problem);
 	}
 
 	public void deleteProblemById(UUID id) {
-		//problemRepository.delete(id);
+		problemRepository.delete(id);
 	}
 
 	public void deleteAllProblems() {

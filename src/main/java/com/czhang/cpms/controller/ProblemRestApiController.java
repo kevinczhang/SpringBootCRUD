@@ -90,9 +90,10 @@ public class ProblemRestApiController {
 
 	// ------------------- Update a Problem------------------------------------
 	@RequestMapping(value = "/problem/{id}", method = RequestMethod.PUT)
-	public ResponseEntity<?> updateProblem(@PathVariable("id") UUID id, @RequestBody Problem problem) {
+	public ResponseEntity<?> updateProblem(@PathVariable("id") String id, @RequestBody ProblemJsonModel problem) {
 		logger.info("Updating User with id {}", id);
-		Problem currentProblem = problemService.findById(id);
+		UUID problemId = CommonMethods.convertStringToUUID(id);
+		Problem currentProblem = problemService.findById(problemId);
 
 		if (currentProblem == null) {
 			logger.error("Unable to update. Problem with id {} not found.", id);
@@ -100,13 +101,8 @@ public class ProblemRestApiController {
 					HttpStatus.NOT_FOUND);
 		}
 
-		currentProblem.setTitle(problem.getTitle());
-		currentProblem.setTags(problem.getTags());
-		currentProblem.setSolution(problem.getSolution());
-		currentProblem.setNumber(problem.getNumber());
-		currentProblem.setDifficulty(problem.getDifficulty());
-		currentProblem.setDescription(problem.getDescription());
-		currentProblem.setCompanies(problem.getCompanies());
+		currentProblem = new Problem(problem);
+		currentProblem.setId(problemId);
 
 		problemService.updateProblem(currentProblem);
 		return new ResponseEntity<>(currentProblem, HttpStatus.OK);
@@ -114,16 +110,16 @@ public class ProblemRestApiController {
 
 	// ------------------- Delete a PRoblem-------------------------------
 	@RequestMapping(value = "/problem/{id}", method = RequestMethod.DELETE)
-	public ResponseEntity<?> deleteProblem(@PathVariable("id") UUID id) {
+	public ResponseEntity<?> deleteProblem(@PathVariable("id") String id) {
 		logger.info("Fetching & Deleting Problem with id {}", id);
-
-		Problem problem = problemService.findById(id);
+		UUID problemId = CommonMethods.convertStringToUUID(id);
+		Problem problem = problemService.findById(problemId);
 		if (problem == null) {
 			logger.error("Unable to delete. User with id {} not found.", id);
 			return new ResponseEntity<>(new CustomErrorType("Unable to delete. User with id " + id + " not found."),
 					HttpStatus.NOT_FOUND);
 		}
-		problemService.deleteProblemById(id);
+		problemService.deleteProblemById(problemId);
 		return new ResponseEntity<>(HttpStatus.NO_CONTENT);
 	}
 
