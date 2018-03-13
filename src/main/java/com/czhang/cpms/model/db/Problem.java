@@ -9,7 +9,6 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Lob;
 
-import com.czhang.cpms.model.ProblemJson;
 import com.czhang.cpms.model.domain.ProblemJsonModel;
 import com.czhang.cpms.util.Constants;
 
@@ -48,10 +47,6 @@ public class Problem {
 		this.tags = Arrays.toString(problem.getTags()).replaceAll("[\\[\\]\"]", "");
 		this.description = Base64.getEncoder().encode(problem.getDescription().getBytes());
 		this.solution = Base64.getEncoder().encode(problem.getSolution().getBytes());
-	}
-
-	public Problem(ProblemJson problem) {
-		// TODO Auto-generated constructor stub
 	}
 
 	public UUID getId() {

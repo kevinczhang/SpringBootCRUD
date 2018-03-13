@@ -15,7 +15,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.czhang.cpms.model.db.Problem;
-import com.czhang.cpms.model.ProblemJson;
 import com.czhang.cpms.model.domain.ProblemJsonModel;
 import com.czhang.cpms.repositories.ProblemRepository;
 
@@ -34,21 +33,6 @@ public class ProblemServiceImpl implements ProblemService {
 
 	public Problem findByTitle(String title) {
 		return problemRepository.findByTitle(title);		
-	}
-
-	public void saveProblem(ProblemJson problem) {
-		Resource resource = resourceLoader.getResource("classpath:/solutions/Easy/addBinary.java");
-		try {
-			InputStream resourceInputStream = resource.getInputStream();
-			String res = readFromInputStream(resourceInputStream);
-			System.out.print(res);
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-
-		com.czhang.cpms.model.db.Problem newProblem = new com.czhang.cpms.model.db.Problem(problem);
-		problemRepository.save(newProblem);
 	}
 	
 	public Problem saveProblem(ProblemJsonModel problem) {

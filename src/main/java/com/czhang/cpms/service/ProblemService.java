@@ -4,15 +4,12 @@ import java.util.List;
 import java.util.UUID;
 
 import com.czhang.cpms.model.db.Problem;
-import com.czhang.cpms.model.ProblemJson;
 import com.czhang.cpms.model.domain.ProblemJsonModel;
 
 public interface ProblemService {
 	Problem findById(UUID id);
 
 	Problem findByTitle(String title);
-
-	void saveProblem(ProblemJson problem);
 	
 	Problem saveProblem(ProblemJsonModel problem);
 

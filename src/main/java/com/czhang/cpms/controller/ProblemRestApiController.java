@@ -1,6 +1,5 @@
 package com.czhang.cpms.controller;
 
-import java.math.BigInteger;
 import java.util.List;
 import java.util.UUID;
 
@@ -19,7 +18,6 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.util.UriComponentsBuilder;
 
 import com.czhang.cpms.model.db.Problem;
-import com.czhang.cpms.model.ProblemJson;
 import com.czhang.cpms.model.domain.ProblemJsonModel;
 import com.czhang.cpms.service.ProblemService;
 import com.czhang.cpms.util.CommonMethods;
