@@ -19,6 +19,10 @@ import com.czhang.cpms.model.db.User;
 import com.czhang.cpms.model.response.BaseResponse;
 import com.czhang.cpms.service.UserService;
 
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiResponses;
+import io.swagger.annotations.ApiResponse;
+
 @RestController
 @RequestMapping("/api")
 public class RestApiController {
@@ -31,6 +35,11 @@ public class RestApiController {
 	// -------------------Retrieve All Users---------------------------------------------
 
 	@RequestMapping(value = "/user/", method = RequestMethod.GET)
+	@ApiOperation(value = "Fetch all users")
+	@ApiResponses(value = { 
+            @ApiResponse(code = 200, message = "Success", response = User.class),
+            @ApiResponse(code = 404, message = "Not Found"),
+            @ApiResponse(code = 500, message = "Server Error")})
 	public ResponseEntity<List<User>> listAllUsers() {
 		List<User> users = userService.findAllUsers();
 		if (users.isEmpty()) {
@@ -41,8 +50,9 @@ public class RestApiController {
 	}
 
 	// -------------------Retrieve Single User------------------------------------------
-
+	
 	@RequestMapping(value = "/user/{id}", method = RequestMethod.GET)
+	@ApiOperation(value = "Fetch a User")
 	public ResponseEntity<?> getUser(@PathVariable("id") long id) {
 		logger.info("Fetching User with id {}", id);
 		User user = userService.findById(id);
@@ -57,6 +67,7 @@ public class RestApiController {
 	// -------------------Create a User-------------------------------------------
 
 	@RequestMapping(value = "/user/", method = RequestMethod.POST)
+	@ApiOperation(value = "Add a user")
 	public ResponseEntity<?> createUser(@RequestBody User user, UriComponentsBuilder ucBuilder) {
 		logger.info("Creating User : {}", user);
 
@@ -75,6 +86,7 @@ public class RestApiController {
 	// ------------------- Update a User ------------------------------------------------
 
 	@RequestMapping(value = "/user/{id}", method = RequestMethod.PUT)
+	@ApiOperation(value = "Update a user")
 	public ResponseEntity<?> updateUser(@PathVariable("id") long id, @RequestBody User user) {
 		logger.info("Updating User with id {}", id);
 
@@ -97,6 +109,7 @@ public class RestApiController {
 	// ------------------- Delete a User-----------------------------------------
 
 	@RequestMapping(value = "/user/{id}", method = RequestMethod.DELETE)
+	@ApiOperation(value = "Delete a user")
 	public ResponseEntity<?> deleteUser(@PathVariable("id") long id) {
 		logger.info("Fetching & Deleting User with id {}", id);
 
@@ -113,6 +126,7 @@ public class RestApiController {
 	// ------------------- Delete All Users-----------------------------
 
 	@RequestMapping(value = "/user/", method = RequestMethod.DELETE)
+	@ApiOperation(value = "Delete all users")
 	public ResponseEntity<User> deleteAllUsers() {
 		logger.info("Deleting All Users");
 
