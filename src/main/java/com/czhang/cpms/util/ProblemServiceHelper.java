@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.math.BigInteger;
+import java.util.List;
 import java.util.UUID;
 
 public class ProblemServiceHelper {
@@ -23,5 +24,24 @@ public class ProblemServiceHelper {
 			}
 		}
 		return resultStringBuilder.toString();
+	}
+	
+	public static <E extends Enum<E>> int getIndex(List<E> enums, String str) {
+		for(E e : enums){
+			if(e.name().equals(str))
+				return enums.indexOf(e);
+		}
+		return -1;
+	}
+
+	public static int[] convertToIntArray(String str) {
+		if(str == null || str.length() == 0)
+			return new int[]{};
+		String[] strArray = str.split(", ");
+		int[] res = new int[strArray.length];
+		for(int i = 0; i < strArray.length; i++){
+			res[i] = Integer.parseInt(strArray[i]);
+		}
+		return res;
 	}
 }

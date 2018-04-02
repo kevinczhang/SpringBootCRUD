@@ -3,7 +3,8 @@ package com.czhang.cpms.model.enums;
 public enum Source {
 	LeetCode("LeetCode"),
 	CodeSnippet("CodeSnippet"),
-	Facebook("Facebook");
+	Facebook("Facebook"),
+	LintCode("LintCode");
 
     private final String name;
 

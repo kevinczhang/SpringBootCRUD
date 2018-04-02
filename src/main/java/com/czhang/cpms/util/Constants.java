@@ -20,7 +20,7 @@ public class Constants {
 			Topic.Recursion, Topic.ReservoirSampling);
 	
 	public static final List<Source> sources = Arrays.asList(
-			Source.LeetCode, Source.Facebook, Source.CodeSnippet);
+			Source.LeetCode, Source.Facebook, Source.CodeSnippet, Source.LintCode);
 	
 	public static final List<ProblemType> types = Arrays.asList(
 			ProblemType.Algorithm, ProblemType.Database, 

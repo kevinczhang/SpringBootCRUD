@@ -65,6 +65,11 @@
 			<version>11.2.0</version>
 		</dependency>
 		<dependency>
+  			<groupId>org.postgresql</groupId>
+  			<artifactId>postgresql</artifactId>
+  			<version>9.4-1206-jdbc42</version>
+		</dependency> 
+		<dependency>
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-lang3</artifactId>
 			<version>3.5</version>
