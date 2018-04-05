@@ -110,6 +110,7 @@ public class ProblemRestApiController {
 	@RequestMapping(value = "/problem/{id}", method = RequestMethod.PUT)
 	public ResponseEntity<ProblemResponse> updateProblem(@PathVariable("id") String id, @RequestBody Problem problem) {
 		logger.info("Updating User with id {}", id);
+		id = id.replaceAll("-", "");
 		ProblemResponse response = new ProblemResponse();
 		UUID problemId = ProblemServiceHelper.convertStringToUUID(id);
 		ProblemDAO currentProblem = problemService.findById(problemId);

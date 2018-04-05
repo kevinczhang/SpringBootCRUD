@@ -39,15 +39,17 @@ public class ProblemServiceImpl implements ProblemService {
 	public ProblemDAO saveProblem(Problem problem) {
 		Resource solutionResource = resourceLoader.getResource("classpath:/solutions/" + problem.getFile() +".java");
 		Resource descriptionResource = resourceLoader.getResource("classpath:/descriptions/" + problem.getFile() +".html");
-		try {
-			InputStream solutionInputStream = solutionResource.getInputStream();
-			InputStream descriptionInputStream = descriptionResource.getInputStream();
-			String solution = ProblemServiceHelper.readFromInputStream(solutionInputStream);
-			String description = ProblemServiceHelper.readFromInputStream(descriptionInputStream);
-			problem.setSolution(solution);
-			problem.setDescription(description);
-		} catch (IOException e) {
-			e.printStackTrace();
+		if(solutionResource.exists() && descriptionResource.exists()) {
+			try {
+				InputStream solutionInputStream = solutionResource.getInputStream();
+				InputStream descriptionInputStream = descriptionResource.getInputStream();
+				String solution = ProblemServiceHelper.readFromInputStream(solutionInputStream);
+				String description = ProblemServiceHelper.readFromInputStream(descriptionInputStream);
+				problem.setSolution(solution);
+				problem.setDescription(description);
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
 		}
 
 		com.czhang.cpms.model.db.ProblemDAO newProblem = new com.czhang.cpms.model.db.ProblemDAO(problem);
