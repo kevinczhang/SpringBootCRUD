@@ -38,15 +38,12 @@ public class ProblemRestApiController {
 	@RequestMapping(value = "/problem/", method = RequestMethod.GET)
 	public ResponseEntity<ProblemResponse> listAllProblems() {
 		ProblemResponse response = new ProblemResponse();
-		List<Problem> problems = problemService.findAllProblems();		
-		if (problems.isEmpty()) {
-			response.setSuccess(true);
-			response.setMessage("No problems found");
-			return new ResponseEntity<>(HttpStatus.NO_CONTENT);
-			// You many decide to return HttpStatus.NOT_FOUND
-		}
+		List<Problem> problems = problemService.findAllProblems();
 		response.setPayload(problems);
 		response.setSuccess(true);
+		if (problems.isEmpty()) {
+			response.setMessage("No problems found");
+		}		
 		response.setMessage("Get all problems.");
 		return new ResponseEntity<>(response, HttpStatus.OK);
 	}
