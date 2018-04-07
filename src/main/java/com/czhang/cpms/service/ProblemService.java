@@ -7,7 +7,7 @@ import com.czhang.cpms.model.db.ProblemDAO;
 import com.czhang.cpms.model.domain.Problem;
 
 public interface ProblemService {
-	ProblemDAO findById(UUID id);
+	ProblemDAO findById(String id);
 
 	ProblemDAO findByTitle(String title);
 	
@@ -15,7 +15,7 @@ public interface ProblemService {
 
 	void updateProblem(ProblemDAO problem);
 
-	void deleteProblemById(UUID id);
+	void deleteProblemById(String id);
 
 	void deleteAllProblems();
 

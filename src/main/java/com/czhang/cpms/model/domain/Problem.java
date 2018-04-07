@@ -50,6 +50,14 @@ public class Problem {
 		this.description = new String(Base64.getDecoder().decode(p.getDescription()));
 	}	
 
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
 	public int getSource() {
 		return source;
 	}

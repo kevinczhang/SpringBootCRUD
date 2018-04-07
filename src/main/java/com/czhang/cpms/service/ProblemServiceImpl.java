@@ -28,7 +28,7 @@ public class ProblemServiceImpl implements ProblemService {
 	@Autowired
 	ResourceLoader resourceLoader;
 
-	public ProblemDAO findById(UUID id) {
+	public ProblemDAO findById(String id) {
 		return problemRepository.findOne(id);
 	}
 
@@ -60,7 +60,7 @@ public class ProblemServiceImpl implements ProblemService {
 		problemRepository.save(problem);
 	}
 
-	public void deleteProblemById(UUID id) {
+	public void deleteProblemById(String id) {
 		problemRepository.delete(id);
 	}
 
@@ -69,7 +69,7 @@ public class ProblemServiceImpl implements ProblemService {
 	}
 
 	public List<Problem> findAllProblems() {
-		List<ProblemDAO> allProblems = problemRepository.findAll();
+		List<ProblemDAO> allProblems = (List<ProblemDAO>) problemRepository.findAll();
 		List<Problem> res = new ArrayList<>();
 		for (ProblemDAO p : allProblems) {
 			res.add(new Problem(p));

@@ -18,7 +18,7 @@ import com.czhang.cpms.util.Constants;
 public class ProblemDAO {
 	
 	@Id	
-	UUID id;
+	String id;
 	String source;
 	@Column(name="problem_number")
 	int number;
@@ -38,7 +38,7 @@ public class ProblemDAO {
 	public ProblemDAO(){}
 
 	public ProblemDAO(Problem problem) {
-		this.id = UUID.randomUUID();
+		this.id = (problem.getId() != null) ? problem.getId() : UUID.randomUUID().toString();
 		this.source = Constants.sources.get(problem.getSource()).name();
 		this.number = problem.getNumber();
 		this.type = Constants.types.get(problem.getType()).name();
@@ -51,11 +51,11 @@ public class ProblemDAO {
 		this.solution = Base64.getEncoder().encode(problem.getSolution().getBytes());
 	}
 
-	public UUID getId() {
+	public String getId() {
 		return id;
 	}
 
-	public void setId(UUID id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 

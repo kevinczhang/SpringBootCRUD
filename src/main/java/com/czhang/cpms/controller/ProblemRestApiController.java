@@ -53,8 +53,8 @@ public class ProblemRestApiController {
 	public ResponseEntity<ProblemResponse> getProblem(@PathVariable("id") String id) {
 		logger.info("Fetching User with id {}", id);
 		ProblemResponse response = new ProblemResponse();
-		UUID problemId = ProblemServiceHelper.convertStringToUUID(id);
-		ProblemDAO problem = problemService.findById(problemId);
+		//UUID problemId = ProblemServiceHelper.convertStringToUUID(id);
+		ProblemDAO problem = problemService.findById(id);
 		if (problem == null) {
 			String message = "Problem with id " + id + " not found.";
 			logger.error(message);
@@ -107,10 +107,10 @@ public class ProblemRestApiController {
 	@RequestMapping(value = "/problem/{id}", method = RequestMethod.PUT)
 	public ResponseEntity<ProblemResponse> updateProblem(@PathVariable("id") String id, @RequestBody Problem problem) {
 		logger.info("Updating User with id {}", id);
-		id = id.replaceAll("-", "");
+		//id = id.replaceAll("-", "");
 		ProblemResponse response = new ProblemResponse();
-		UUID problemId = ProblemServiceHelper.convertStringToUUID(id);
-		ProblemDAO currentProblem = problemService.findById(problemId);
+		//UUID problemId = ProblemServiceHelper.convertStringToUUID(id);
+		ProblemDAO currentProblem = problemService.findById(id);
 
 		if (currentProblem == null) {
 			String message = "Unable to update. Problem with id " + id + " not found.";
@@ -121,7 +121,7 @@ public class ProblemRestApiController {
 		}
 
 		currentProblem = new ProblemDAO(problem);
-		currentProblem.setId(problemId);
+		currentProblem.setId(id);
 		problemService.updateProblem(currentProblem);		
 		response.setSuccess(true);
 		response.setMessage("Problem updated");
@@ -134,8 +134,8 @@ public class ProblemRestApiController {
 	public ResponseEntity<ProblemResponse> deleteProblem(@PathVariable("id") String id) {
 		logger.info("Fetching & Deleting Problem with id {}", id);
 		ProblemResponse response = new ProblemResponse();
-		UUID problemId = ProblemServiceHelper.convertStringToUUID(id);
-		ProblemDAO problem = problemService.findById(problemId);
+		// UUID problemId = ProblemServiceHelper.convertStringToUUID(id);
+		ProblemDAO problem = problemService.findById(id);
 		if (problem == null) {
 			String message = "Unable to delete. User with id " + id + " not found.";
 			logger.error(message);
@@ -143,7 +143,7 @@ public class ProblemRestApiController {
 			response.setMessage(message);
 			return new ResponseEntity<>(response, HttpStatus.NOT_FOUND);
 		}
-		problemService.deleteProblemById(problemId);
+		problemService.deleteProblemById(id);
 		response.setSuccess(true);
 		response.setMessage("Problem deleted");
 		return new ResponseEntity<>(response, HttpStatus.NO_CONTENT);
