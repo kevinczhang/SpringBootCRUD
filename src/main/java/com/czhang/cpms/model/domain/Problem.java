@@ -29,6 +29,8 @@ public class Problem {
 	int[] companies;
 	@JsonProperty("tags")
 	int[] tags;
+	@JsonProperty("familiarity")
+	int familiarity;
 	@JsonProperty("solution")
 	String solution;
 	@JsonProperty("description")
@@ -46,6 +48,7 @@ public class Problem {
 		this.topics = ProblemServiceHelper.convertToIntArray(p.getTopics());
 		this.companies = ProblemServiceHelper.convertToIntArray(p.getCompanies());
 		this.tags = ProblemServiceHelper.convertToIntArray(p.getTags());
+		this.familiarity = p.getFamiliarity();
 		this.solution = new String(Base64.getDecoder().decode(p.getSolution()));
 		this.description = new String(Base64.getDecoder().decode(p.getDescription()));
 	}	
@@ -128,6 +131,14 @@ public class Problem {
 
 	public void setTags(int[] tags) {
 		this.tags = tags;
+	}
+
+	public int getFamiliarity() {
+		return familiarity;
+	}
+
+	public void setFamiliarity(int familiarity) {
+		this.familiarity = familiarity;
 	}
 
 	public String getSolution() {

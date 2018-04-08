@@ -27,13 +27,14 @@ public class ProblemDAO {
 	String difficulty;	
 	String topics;
 	String companies;
-	String tags;
+	String tags;	
 	@Lob
 	@Column(length=100000)
 	byte[] description;
 	@Lob
 	@Column(length=100000)
 	byte[] solution;
+	int familiarity = 0;
 	
 	public ProblemDAO(){}
 
@@ -47,6 +48,7 @@ public class ProblemDAO {
 		this.topics = Arrays.toString(problem.getTopics()).replaceAll("[\\[\\]\"]", "");
 		this.companies = Arrays.toString(problem.getCompanies()).replaceAll("[\\[\\]\"]", "");
 		this.tags = Arrays.toString(problem.getTags()).replaceAll("[\\[\\]\"]", "");
+		this.familiarity = problem.getFamiliarity();
 		this.description = Base64.getEncoder().encode(problem.getDescription().getBytes());
 		this.solution = Base64.getEncoder().encode(problem.getSolution().getBytes());
 	}
@@ -122,6 +124,14 @@ public class ProblemDAO {
 	public void setTags(String tags) {
 		this.tags = tags;
 	}
+	
+	public int getFamiliarity() {
+		return familiarity;
+	}
+
+	public void setFamiliarity(int familiarity) {
+		this.familiarity = familiarity;
+	}
 
 	public byte[] getDescription() {
 		return description;
@@ -137,7 +147,5 @@ public class ProblemDAO {
 
 	public void setSolution(byte[] solution) {
 		this.solution = solution;
-	}
-
-	
+	}	
 }

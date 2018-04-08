@@ -52,7 +52,7 @@ public class ProblemServiceImpl implements ProblemService {
 			}
 		}
 
-		com.czhang.cpms.model.db.ProblemDAO newProblem = new com.czhang.cpms.model.db.ProblemDAO(problem);
+		ProblemDAO newProblem = new ProblemDAO(problem);
 		return problemRepository.save(newProblem);
 	}
 
