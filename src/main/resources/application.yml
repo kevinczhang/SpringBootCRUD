@@ -4,7 +4,39 @@ server:
   contextPath: /SpringBootCRUDApp
 ---
 spring:
+  profiles: postgresql
+datasource:
+  sampleapp:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: 78320
+    driverClassName: org.postgresql.Driver
+    defaultSchema: public
+    maxPoolSize: 10
+    hibernate:
+      hbm2ddl.method: create-drop
+      show_sql: true
+      format_sql: true
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+---
+spring:
   profiles: local,default
+datasource:
+  sampleapp:
+    url: ${JDBC_DATABASE_URL}
+    username: ${JDBC_DATABASE_USERNAME}
+    password: ${JDBC_DATABASE_PASSWORD}
+    driverClassName: org.postgresql.Driver
+    defaultSchema: public
+    maxPoolSize: 10
+    hibernate:
+      hbm2ddl.method: create-drop
+      show_sql: true
+      format_sql: true
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+---
+spring:
+  profiles: oracle
 datasource:
   sampleapp:
     url: jdbc:oracle:thin:@localhost:1521:xe
@@ -36,7 +68,7 @@ datasource:
       dialect: org.hibernate.dialect.H2Dialect
 ---
 spring:
-  profiles: prod
+  profiles: mysql
 datasource:
   sampleapp:
     url: jdbc:mysql://localhost:3306/websystique
@@ -46,7 +78,7 @@ datasource:
     defaultSchema:
     maxPoolSize: 20
     hibernate:
-      hbm2ddl.method: update
+      hbm2ddl.method: create-drop
       show_sql: true
       format_sql: true
       dialect: org.hibernate.dialect.MySQLDialect
