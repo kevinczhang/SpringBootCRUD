@@ -22,10 +22,9 @@ import com.czhang.cpms.model.domain.Problem;
 import com.czhang.cpms.model.response.ProblemResponse;
 import com.czhang.cpms.service.ProblemService;
 import com.czhang.cpms.util.ProblemServiceHelper;
-
+@CrossOrigin(origins = "http://localhost:4200", maxAge = 3600)
 @RestController
 @RequestMapping("/api")
-@CrossOrigin("maxAge = 3600")
 public class ProblemRestApiController {
 
 	public static final Logger logger = LoggerFactory.getLogger(ProblemRestApiController.class);
@@ -35,7 +34,6 @@ public class ProblemRestApiController {
 	ProblemService problemService;
 
 	// -------------------Retrieve All Problems---------------------
-	@CrossOrigin(origins = "http://localhost:4200")
 	@RequestMapping(value = "/problem/", method = RequestMethod.GET)
 	public ResponseEntity<ProblemResponse> listAllProblems() {
 		ProblemResponse response = new ProblemResponse();
