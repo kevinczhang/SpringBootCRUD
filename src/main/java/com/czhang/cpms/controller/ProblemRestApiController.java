@@ -25,7 +25,7 @@ import com.czhang.cpms.util.ProblemServiceHelper;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin
+@CrossOrigin("maxAge = 3600")
 public class ProblemRestApiController {
 
 	public static final Logger logger = LoggerFactory.getLogger(ProblemRestApiController.class);
@@ -35,6 +35,7 @@ public class ProblemRestApiController {
 	ProblemService problemService;
 
 	// -------------------Retrieve All Problems---------------------
+	@CrossOrigin(origins = "http://localhost:4200")
 	@RequestMapping(value = "/problem/", method = RequestMethod.GET)
 	public ResponseEntity<ProblemResponse> listAllProblems() {
 		ProblemResponse response = new ProblemResponse();
