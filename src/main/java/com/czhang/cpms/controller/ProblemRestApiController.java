@@ -22,7 +22,8 @@ import com.czhang.cpms.model.domain.Problem;
 import com.czhang.cpms.model.response.ProblemResponse;
 import com.czhang.cpms.service.ProblemService;
 import com.czhang.cpms.util.ProblemServiceHelper;
-@CrossOrigin(origins = "http://localhost:4200", maxAge = 3600)
+
+@CrossOrigin(origins = "*", allowCredentials = "true", allowedHeaders = "*")
 @RestController
 @RequestMapping("/api")
 public class ProblemRestApiController {
