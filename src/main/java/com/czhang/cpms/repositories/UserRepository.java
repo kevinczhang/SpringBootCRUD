@@ -8,6 +8,6 @@ import com.czhang.cpms.model.db.User;
 @Repository
 public interface UserRepository extends JpaRepository<User, Long> {
 
-    User findByName(String name);
+	User findByUsername(String username);
 
 }

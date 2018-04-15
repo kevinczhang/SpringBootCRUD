@@ -1,92 +1,93 @@
 package com.czhang.cpms.model.db;
 
 import org.hibernate.validator.constraints.NotEmpty;
+import org.springframework.security.core.GrantedAuthority;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.List;
 
 @Entity
-@Table(name="APP_USER")
-public class User implements Serializable{
+@Table(name = "app_user")
+public class User {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
+    private Long id;
 
-	@Id
-	@Column(name = "ID")
-	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator = "id_Sequence")
-	@SequenceGenerator(name = "id_Sequence", sequenceName = "ID_SEQ")
-	private Long id;
+    @Column(name = "username")
+    private String username;
 
-	@NotEmpty
-	@Column(name="NAME", nullable=false)
-	private String name;
+    @Column(name = "password")
+    @JsonIgnore
+    private String password;
 
-	@Column(name="AGE", nullable=false)
-	private Integer age;
+    @Column(name = "first_name")
+    private String firstName;
 
-	@Column(name="SALARY", nullable=false)
-	private double salary;
+    @Column(name = "last_name")
+    private String lastName;
 
-	public Long getId() {
-		return id;
-	}
+    /**
+     * Roles are being eagerly loaded here because
+     * they are a fairly small collection of items for this example.
+     */
+    @ManyToMany(fetch = FetchType.EAGER)
+    @JoinTable(name = "user_role", joinColumns
+            = @JoinColumn(name = "user_id",
+            referencedColumnName = "id"),
+            inverseJoinColumns = @JoinColumn(name = "role_id",
+                    referencedColumnName = "id"))
+    private List<Role> roles;
 
-	public void setId(Long id) {
-		this.id = id;
-	}
+    public Long getId() {
+        return id;
+    }
 
-	public String getName() {
-		return name;
-	}
+    public void setId(Long id) {
+        this.id = id;
+    }
 
-	public void setName(String name) {
-		this.name = name;
-	}
+    public String getUsername() {
+        return username;
+    }
 
-	public Integer getAge() {
-		return age;
-	}
+    public void setUsername(String username) {
+        this.username = username;
+    }
 
-	public void setAge(Integer age) {
-		this.age = age;
-	}
+    public String getPassword() {
+        return password;
+    }
 
-	public double getSalary() {
-		return salary;
-	}
+    public void setPassword(String password) {
+        this.password = password;
+    }
 
-	public void setSalary(double salary) {
-		this.salary = salary;
-	}
+    public String getFirstName() {
+        return firstName;
+    }
 
-	@Override
-	public boolean equals(Object o) {
-		if (this == o) return true;
-		if (o == null || getClass() != o.getClass()) return false;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
 
-		User user = (User) o;
+    public String getLastName() {
+        return lastName;
+    }
 
-		if (Double.compare(user.salary, salary) != 0) return false;
-		if (id != null ? !id.equals(user.id) : user.id != null) return false;
-		if (name != null ? !name.equals(user.name) : user.name != null) return false;
-		return age != null ? age.equals(user.age) : user.age == null;
-	}
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
 
-	@Override
-	public int hashCode() {
-		int result;
-		long temp;
-		result = id != null ? id.hashCode() : 0;
-		result = 31 * result + (name != null ? name.hashCode() : 0);
-		result = 31 * result + (age != null ? age.hashCode() : 0);
-		temp = Double.doubleToLongBits(salary);
-		result = 31 * result + (int) (temp ^ (temp >>> 32));
-		return result;
-	}
+    public List<Role> getRoles() {
+        return roles;
+    }
 
-	@Override
-	public String toString() {
-		return "User [id=" + id + ", name=" + name + ", age=" + age
-				+ ", salary=" + salary + "]";
-	}
-
-
+    public void setRoles(List<Role> roles) {
+        this.roles = roles;
+    }
 }
