@@ -2,14 +2,16 @@ package com.czhang.cpms.service;
 
 import java.util.List;
 
-import com.czhang.cpms.model.db.User;
+import com.czhang.cpms.model.db.RoleDAO;
+import com.czhang.cpms.model.db.UserDAO;
+import com.czhang.cpms.model.domain.User;
 import com.czhang.cpms.repositories.UserRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.security.authentication.encoding.ShaPasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
-
 
 @Service("userService")
 @Transactional
@@ -17,17 +19,27 @@ public class UserServiceImpl implements UserService{
 
 	@Autowired
 	private UserRepository userRepository;
+	@Autowired
+	RoleService roleService;
 
-	public User findById(Long id) {
+	@Value("${security.encoding-strength}")
+	private Integer encodingStrength;
+
+	public UserDAO findById(Long id) {
 		return userRepository.findOne(id);
 	}
 
-	public User findByUserName(String name) {
+	public UserDAO findByUserName(String name) {
 		return userRepository.findByUsername(name);
 	}
 	
-	public void saveUser(User user) {
-		userRepository.save(user);
+	public UserDAO saveUser(User user) {
+		ShaPasswordEncoder encoder = new ShaPasswordEncoder(encodingStrength);
+		user.setPassword(encoder.encodePassword(user.getPassword(), ""));
+		UserDAO newUser = new UserDAO(user);
+		RoleDAO userRole = roleService.findRolebyId(1);
+		newUser.getRoles().add(userRole);
+		return userRepository.save(newUser);
 	}
 
 	public void updateUser(User user){
@@ -42,7 +54,7 @@ public class UserServiceImpl implements UserService{
 		userRepository.deleteAll();
 	}
 
-	public List<User> findAllUsers(){
+	public List<UserDAO> findAllUsers(){
 		return userRepository.findAll();
 	}
 

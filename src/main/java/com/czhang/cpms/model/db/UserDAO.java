@@ -1,18 +1,15 @@
 package com.czhang.cpms.model.db;
 
-import org.hibernate.validator.constraints.NotEmpty;
-import org.springframework.security.core.GrantedAuthority;
-
+import com.czhang.cpms.model.domain.User;
 import com.fasterxml.jackson.annotation.JsonIgnore;
-
-
 import javax.persistence.*;
-import java.io.Serializable;
+
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
 @Table(name = "app_user")
-public class User {
+public class UserDAO {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
@@ -41,9 +38,21 @@ public class User {
             referencedColumnName = "id"),
             inverseJoinColumns = @JoinColumn(name = "role_id",
                     referencedColumnName = "id"))
-    private List<Role> roles;
+    private List<RoleDAO> roles;
+    
+    public UserDAO() {
+    	this.roles = new ArrayList<>();
+    }
 
-    public Long getId() {
+    public UserDAO(User user) {
+		this.firstName = user.getFirstName();
+		this.lastName = user.getLastName();
+		this.username = user.getUsername();
+		this.password = user.getPassword();	
+		this.roles = new ArrayList<>();
+	}
+
+	public Long getId() {
         return id;
     }
 
@@ -83,11 +92,11 @@ public class User {
         this.lastName = lastName;
     }
 
-    public List<Role> getRoles() {
+    public List<RoleDAO> getRoles() {
         return roles;
     }
 
-    public void setRoles(List<Role> roles) {
+    public void setRoles(List<RoleDAO> roles) {
         this.roles = roles;
     }
 }

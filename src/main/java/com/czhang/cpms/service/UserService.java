@@ -3,15 +3,16 @@ package com.czhang.cpms.service;
 
 import java.util.List;
 
-import com.czhang.cpms.model.db.User;
+import com.czhang.cpms.model.db.UserDAO;
+import com.czhang.cpms.model.domain.User;
 
 public interface UserService {
 	
-	User findById(Long id);
+	UserDAO findById(Long id);
 
-	User findByUserName(String name);
+	UserDAO findByUserName(String name);
 
-	void saveUser(User user);
+	UserDAO saveUser(User user);
 
 	void updateUser(User user);
 
@@ -19,7 +20,7 @@ public interface UserService {
 
 	void deleteAllUsers();
 
-	List<User> findAllUsers();
+	List<UserDAO> findAllUsers();
 
 	boolean isUserExist(User user);
 }

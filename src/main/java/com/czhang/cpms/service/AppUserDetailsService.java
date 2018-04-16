@@ -1,6 +1,6 @@
 package com.czhang.cpms.service;
 
-import com.czhang.cpms.model.db.User;
+import com.czhang.cpms.model.db.UserDAO;
 import com.czhang.cpms.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
@@ -23,7 +23,7 @@ public class AppUserDetailsService implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String s) throws UsernameNotFoundException {
-        User user = userRepository.findByUsername(s);
+        UserDAO user = userRepository.findByUsername(s);
 
         if(user == null) {
             throw new UsernameNotFoundException(String.format("The username %s doesn't exist", s));
