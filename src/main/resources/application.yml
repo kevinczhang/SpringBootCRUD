@@ -42,7 +42,7 @@ datasource:
     defaultSchema: public
     maxPoolSize: 10
     hibernate:
-      hbm2ddl.method: create-drop
+      hbm2ddl.method: update
       show_sql: true
       format_sql: true
       dialect: org.hibernate.dialect.PostgreSQLDialect
