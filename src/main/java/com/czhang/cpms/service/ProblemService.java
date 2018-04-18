@@ -22,4 +22,6 @@ public interface ProblemService {
 	List<Problem> findAllProblems();
 
 	boolean isProblemExist(Problem problem);
+
+	List<Problem> findProblemList();
 }

@@ -17,6 +17,7 @@ import org.springframework.transaction.annotation.Transactional;
 import com.czhang.cpms.model.db.ProblemDAO;
 import com.czhang.cpms.model.domain.Problem;
 import com.czhang.cpms.repositories.ProblemRepository;
+import com.czhang.cpms.util.Constants;
 import com.czhang.cpms.util.ProblemServiceHelper;
 
 @Service("problemService")
@@ -71,8 +72,23 @@ public class ProblemServiceImpl implements ProblemService {
 	public List<Problem> findAllProblems() {
 		List<ProblemDAO> allProblems = (List<ProblemDAO>) problemRepository.findAll();
 		List<Problem> res = new ArrayList<>();
-		for (ProblemDAO p : allProblems) {
+		for (ProblemDAO p : allProblems) {			
 			res.add(new Problem(p));
+		}
+		return res;
+	}
+	
+	public List<Problem> findProblemList() {
+		List<ProblemDAO> allProblems = (List<ProblemDAO>) problemRepository.findAll();
+		List<Problem> res = new ArrayList<>();
+		for (ProblemDAO p : allProblems) {
+			Problem newProblem = new Problem();
+			newProblem.setId(p.getId());
+			newProblem.setSource(ProblemServiceHelper.getIndex(Constants.sources, p.getSource()));
+			newProblem.setTitle(p.getTitle());
+			newProblem.setNumber(p.getNumber());
+			newProblem.setDifficulty(ProblemServiceHelper.getIndex(Constants.levels, p.getDifficulty()));
+			res.add(newProblem);
 		}
 		return res;
 	}

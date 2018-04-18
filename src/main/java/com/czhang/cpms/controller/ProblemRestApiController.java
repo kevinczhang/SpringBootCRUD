@@ -47,6 +47,20 @@ public class ProblemRestApiController {
 		response.setMessage("Get all problems.");
 		return new ResponseEntity<>(response, HttpStatus.OK);
 	}
+	
+	// -------------------Retrieve All Problems---------------------
+	@RequestMapping(value = "/problemList/", method = RequestMethod.GET)
+	public ResponseEntity<ProblemResponse> getProbleList() {
+		ProblemResponse response = new ProblemResponse();
+		List<Problem> problems = problemService.findProblemList();
+		response.setPayload(problems);
+		response.setSuccess(true);
+		if (problems.isEmpty()) {
+			response.setMessage("No problems found");
+		}		
+		response.setMessage("Get all problems.");
+		return new ResponseEntity<>(response, HttpStatus.OK);
+	}
 
 	// -------------------Retrieve Single Problem---------------------
 	@RequestMapping(value = "/problem/{id}", method = RequestMethod.GET)
