@@ -5,6 +5,7 @@ import java.util.List;
 
 import com.czhang.cpms.model.enums.Company;
 import com.czhang.cpms.model.enums.DifficultyLevel;
+import com.czhang.cpms.model.enums.Language;
 import com.czhang.cpms.model.enums.ProblemType;
 import com.czhang.cpms.model.enums.Source;
 import com.czhang.cpms.model.enums.Topic;
@@ -32,4 +33,8 @@ public class Constants {
 	public static final List<Company> companies = Arrays.asList(
 			Company.Facebook, Company.Amazon, Company.Bloomberg, 
 			Company.Google, Company.Microsoft, Company.Yelp);
+	
+	public static final List<Language> languages = Arrays.asList(
+			Language.CPlus, Language.CSharp, Language.Go, Language.Java, Language.Javascript,
+			Language.Python, Language.Ruby);
 }

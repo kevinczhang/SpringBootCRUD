@@ -1,14 +1,27 @@
 package com.czhang.cpms.model.db;
 
+import java.util.Date;
+import java.util.HashSet;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Base64;
+import java.util.List;
+import java.util.Set;
 import java.util.UUID;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
 import javax.persistence.Lob;
+import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 import com.czhang.cpms.model.domain.Problem;
 import com.czhang.cpms.util.Constants;
@@ -36,9 +49,35 @@ public class ProblemDAO {
 	byte[] solution;
 	int familiarity = 0;
 	
-	public ProblemDAO(){}
+	@Column(name = "createdTime", columnDefinition="TIMESTAMP")
+	@Temporal(TemporalType.TIMESTAMP)
+	private Date createdTime;
+	
+	@Column(name = "updatedTime", columnDefinition="TIMESTAMP")
+	@Temporal(TemporalType.TIMESTAMP)
+	private Date updatedTime;
+	
+	/**
+     * Roles are being eagerly loaded here because
+     * they are a fairly small collection of items for this example.
+     */
+    @ManyToMany(fetch = FetchType.EAGER)
+    @JoinTable(name = "user_problem", joinColumns = @JoinColumn(name = "user_id",referencedColumnName = "id"),
+    inverseJoinColumns = @JoinColumn(name = "problem_id", referencedColumnName = "id"))
+    private List<UserDAO> users;
+    
+    @OneToMany(cascade = CascadeType.ALL,
+            fetch = FetchType.LAZY,
+            mappedBy = "problem")
+    private Set<SolutionDAO> solutions;
+    
+    public ProblemDAO() {
+    	this.users = new ArrayList<>();
+    	this.solutions = new HashSet<>();
+    }
 
 	public ProblemDAO(Problem problem) {
+		this();
 		this.id = (problem.getId() != null) ? problem.getId() : UUID.randomUUID().toString();
 		this.source = Constants.sources.get(problem.getSource()).name();
 		this.number = problem.getNumber();
@@ -147,5 +186,37 @@ public class ProblemDAO {
 
 	public void setSolution(byte[] solution) {
 		this.solution = solution;
+	}
+
+	public Date getCreatedTime() {
+		return createdTime;
+	}
+
+	public void setCreatedTime(Date createdTime) {
+		this.createdTime = createdTime;
+	}
+
+	public Date getUpdatedTime() {
+		return updatedTime;
+	}
+
+	public void setUpdatedTime(Date updatedTime) {
+		this.updatedTime = updatedTime;
+	}
+
+	public List<UserDAO> getUsers() {
+		return users;
+	}
+
+	public void setUsers(List<UserDAO> users) {
+		this.users = users;
+	}
+
+	public Set<SolutionDAO> getSolutions() {
+		return solutions;
+	}
+
+	public void setSolutions(Set<SolutionDAO> solutions) {
+		this.solutions = solutions;
 	}	
 }

@@ -5,7 +5,9 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import javax.persistence.*;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 @Entity
 @Table(name = "app_user")
@@ -33,15 +35,18 @@ public class UserDAO {
      * they are a fairly small collection of items for this example.
      */
     @ManyToMany(fetch = FetchType.EAGER)
-    @JoinTable(name = "user_role", joinColumns
-            = @JoinColumn(name = "user_id",
-            referencedColumnName = "id"),
-            inverseJoinColumns = @JoinColumn(name = "role_id",
-                    referencedColumnName = "id"))
+    @JoinTable(name = "user_role", joinColumns = @JoinColumn(name = "user_id", referencedColumnName = "id"),
+            inverseJoinColumns = @JoinColumn(name = "role_id", referencedColumnName = "id"))
     private List<RoleDAO> roles;
+    
+    @OneToMany(cascade = CascadeType.ALL,
+            fetch = FetchType.LAZY,
+            mappedBy = "user")
+    private Set<SolutionDAO> solutions;
     
     public UserDAO() {
     	this.roles = new ArrayList<>();
+    	//this.solutions = new HashSet<>();
     }
 
     public UserDAO(User user) {
@@ -99,4 +104,12 @@ public class UserDAO {
     public void setRoles(List<RoleDAO> roles) {
         this.roles = roles;
     }
+
+	public Set<SolutionDAO> getSolutions() {
+		return solutions;
+	}
+
+	public void setSolutions(Set<SolutionDAO> solutions) {
+		this.solutions = solutions;
+	}
 }
