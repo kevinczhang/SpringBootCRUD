@@ -1,8 +1,6 @@
 package com.czhang.cpms.model.domain;
 
 import java.util.Base64;
-import java.util.List;
-
 import com.czhang.cpms.model.db.ProblemDAO;
 import com.czhang.cpms.util.Constants;
 import com.czhang.cpms.util.ProblemServiceHelper;

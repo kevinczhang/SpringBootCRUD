@@ -9,7 +9,7 @@ import javax.persistence.*;
 @Table(name="app_role")
 public class RoleDAO {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    //@GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(name="role_name")

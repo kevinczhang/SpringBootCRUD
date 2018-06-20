@@ -1,7 +1,6 @@
 package com.czhang.cpms.controller;
 
 import java.util.List;
-import java.util.UUID;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -21,7 +20,6 @@ import com.czhang.cpms.model.db.ProblemDAO;
 import com.czhang.cpms.model.domain.Problem;
 import com.czhang.cpms.model.response.ProblemResponse;
 import com.czhang.cpms.service.ProblemService;
-import com.czhang.cpms.util.ProblemServiceHelper;
 
 @CrossOrigin(origins = { "*" }, allowCredentials = "false", allowedHeaders = "*")
 @RestController

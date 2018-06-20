@@ -32,7 +32,7 @@ datasource:
       dialect: org.hibernate.dialect.PostgreSQLDialect
 ---
 spring:
-  profiles: local,default
+  profiles: Heroku
 datasource:
   sampleapp:
     url: ${JDBC_DATABASE_URL}
@@ -48,12 +48,12 @@ datasource:
       dialect: org.hibernate.dialect.PostgreSQLDialect
 ---
 spring:
-  profiles: oracle
+  profiles: local,default
 datasource:
   sampleapp:
     url: jdbc:oracle:thin:@localhost:1521:xe
     username: czhang
-    password: 78320
+    password: Dec31tgb
     driverClassName: jdbc.driver.OracleDriver
     defaultSchema: czhang
     maxPoolSize: 10

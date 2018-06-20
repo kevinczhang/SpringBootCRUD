@@ -5,9 +5,6 @@ import static springfox.documentation.builders.PathSelectors.regex;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
-import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
-
 import com.google.common.base.Predicate;
 
 import springfox.documentation.builders.ApiInfoBuilder;

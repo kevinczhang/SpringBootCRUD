@@ -16,11 +16,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.util.UriComponentsBuilder;
 
-import com.czhang.cpms.model.db.RoleDAO;
 import com.czhang.cpms.model.db.UserDAO;
 import com.czhang.cpms.model.domain.User;
 import com.czhang.cpms.model.response.UserResponse;
-import com.czhang.cpms.service.RoleService;
 import com.czhang.cpms.service.UserService;
 
 @CrossOrigin(origins = { "*" }, allowCredentials = "false", allowedHeaders = "*")
